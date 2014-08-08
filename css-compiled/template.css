@@ -712,8 +712,13 @@ ul.pagination {
     vertical-align: top;
     margin-top: 2rem;
     margin-bottom: 1rem; }
-    @media only all and (max-width: 47.938rem) {
+    @media only all and (min-width: 30.063rem) and (max-width: 47.938rem) {
       .modular .features .feature {
+        margin-top: 1rem;
+        width: 50%; } }
+    @media only all and (max-width: 30rem) {
+      .modular .features .feature {
+        margin-top: 1rem;
         width: 100%; } }
     .modular .features .feature i.fa {
       font-size: 2rem;
@@ -729,6 +734,10 @@ ul.pagination {
     text-align: center; }
     .modular .features.big .feature {
       width: 50%; }
+      @media only all and (max-width: 30rem) {
+        .modular .features.big .feature {
+          margin-top: 1rem;
+          width: 100%; } }
     .modular .features.big i.fa {
       font-size: 3rem;
       float: left; }

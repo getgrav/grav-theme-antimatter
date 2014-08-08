@@ -26,12 +26,17 @@
             display:block;
             float: left;
             width: 25%;
-            @include breakpoint(mobile-only) {
-                width: 100%;
-            }
             vertical-align: top;
             margin-top: 2rem;
             margin-bottom: 1rem;
+            @include breakpoint(large-mobile-range) {
+                margin-top: 1rem;
+                width: 50%;
+            }
+            @include breakpoint(small-mobile-range) {
+                margin-top: 1rem;
+                width: 100%;
+            }
 
             i.fa {
                 font-size: 2rem;
@@ -56,6 +61,10 @@
 
             .feature {
                 width: 50%;
+                @include breakpoint(small-mobile-range) {
+                    margin-top: 1rem;
+                    width: 100%;
+                }
             }
 
             i.fa {
