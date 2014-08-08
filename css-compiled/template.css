@@ -755,12 +755,23 @@ ul.pagination {
 .callout {
   background: #f6f6f6;
   padding: 3rem 0.938rem; }
+  @media only all and (max-width: 59.938rem) {
+    .callout {
+      text-align: center; } }
   .callout .align-left {
     float: left;
     margin-right: 2rem; }
+    @media only all and (max-width: 59.938rem) {
+      .callout .align-left {
+        float: none;
+        margin-right: 0; } }
   .callout .align-right {
     float: right;
     margin-left: 2rem; }
+    @media only all and (max-width: 59.938rem) {
+      .callout .align-right {
+        float: none;
+        margin-left: 0; } }
   .callout img {
     border-radius: 3px; }
 
