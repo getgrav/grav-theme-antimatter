@@ -3,12 +3,7 @@
 
     // special case for header
     &.header-image {
-        #body {
-            >.showcase {
-                margin-top: - $header-height - $padding-vert - 1.5rem;
-                padding-top: $header-height + 4rem;
-            }
-        }
+
         #header {
             background-color: rgba(255,255,255,0);
             box-shadow: none;

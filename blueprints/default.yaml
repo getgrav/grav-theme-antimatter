@@ -148,16 +148,16 @@ form:
               validate:
                 type: commalist
 
-        assets:
+        media:
           type: tab
-          title: Assets
+          title: Media
 
           fields:
             files:
               type: spacer
               title: Files
 
-            assets:
+            media:
               type: list
               add: Add file
-              @import: 'asset/file'
+              @import: 'medium/file'

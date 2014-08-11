@@ -14,11 +14,11 @@
         </span>
         {% endif %}
         {% if big_header %}
-            {{ page.assets.images|first.cropResize(900,600).html }}
+            {{ page.media.images|first.cropResize(900,600).html }}
         {% else %}
-            {{ page.assets.images|first.cropZoom(900,300).html }}
+            {{ page.media.images|first.cropZoom(900,300).html }}
         {% endif %}
-        
+
     </div>
 
     <div class="list-blog-padding">

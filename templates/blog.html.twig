@@ -4,10 +4,10 @@
 	{% set base_url = base_url_relative ~ site.blog.route %}
 
 	{% block content %}
-		{% set blog_image = page.assets.images|first.grayscale().contrast(20).brightness(-100).colorize(-35,81,122) %}
+		{% set blog_image = page.media.images|first.grayscale().contrast(20).brightness(-100).colorize(-35,81,122) %}
 
 		{% if blog_image %}
-			<div class="blog-header blog-header-image" style="background-image: url({{ blog_image.url }});">
+			<div class="flush-top blog-header blog-header-image" style="background-image: url({{ blog_image.url }});">
 		{% else %}
 		<div class="blog-header">
 		{% endif %}
@@ -16,7 +16,7 @@
 
 		{% include 'breadcrumbs.html.twig' %}
 
-		<div class="blog-content-list grid pure-g-r">
+		<div class="content-wrapper blog-content-list grid pure-g-r">
 			<div id="listing" class="block pure-u-2-3">
 				{% for child in collection %}
 			        {% include 'partials/blog_item.html.twig' with {'page':child, 'truncate':true} %}

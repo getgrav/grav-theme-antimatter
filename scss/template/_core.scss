@@ -32,7 +32,7 @@ b, strong {
 		padding-left: 0;
 		padding-right: 0;
 	}
-	#header, #breadcrumbs, .blog-header, .blog-content-item, .blog-content-list, ul.pagination, #body > .modular-row {
+	#header, #breadcrumbs, .blog-header, .blog-content-item, .content-wrapper, ul.pagination, #body > .modular-row {
 		@extend .padding-horiz;
 	}
 }

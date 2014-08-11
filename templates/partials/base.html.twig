@@ -61,12 +61,15 @@
                     <h3><a href="{{ base_url_absolute}}">{{ config.site.title }}</a></h3>
                 </div>
                 <div id="navbar">
+                    {% block header_extra %}{% endblock %}
                     {% include 'partials/navigation.html.twig' %}
                     <span class="panel-activation menu-btn">&#9776;</span>
                 </div>
 
         </header>
         {% endblock %}
+
+        {% block showcase %}{% endblock %}
 
         {% block body %}
         <section id="body" class="{{ class }}">

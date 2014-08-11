@@ -11,6 +11,9 @@
 .button, .button-secondary {
   display: inline-block;
   padding: 7px 20px; }
+  .button-small.button, .button-small.button-secondary {
+    padding: 3px 10px;
+    font-size: 0.9rem; }
 
 html, body {
   height: 100%; }
@@ -46,15 +49,15 @@ b, strong, label, th {
   -moz-transition: all 0.5s ease;
   transition: all 0.5s ease; }
 
-.padding-horiz, .fullwidth #header, .fullwidth #breadcrumbs, .fullwidth .blog-header, .fullwidth .blog-content-item, .fullwidth .blog-content-list, .fullwidth ul.pagination, .fullwidth #body > .modular-row, #body, #header, #footer {
+.padding-horiz, .fullwidth #header, .fullwidth #breadcrumbs, .fullwidth .blog-header, .fullwidth .blog-content-item, .fullwidth .content-wrapper, .fullwidth ul.pagination, .fullwidth #body > .modular-row, #body, #header, #footer {
   padding-left: 7rem;
   padding-right: 7rem; }
   @media only all and (max-width: 59.938rem) {
-    .padding-horiz, .fullwidth #header, .fullwidth #breadcrumbs, .fullwidth .blog-header, .fullwidth .blog-content-item, .fullwidth .blog-content-list, .fullwidth ul.pagination, .fullwidth #body > .modular-row, #body, #header, #footer {
+    .padding-horiz, .fullwidth #header, .fullwidth #breadcrumbs, .fullwidth .blog-header, .fullwidth .blog-content-item, .fullwidth .content-wrapper, .fullwidth ul.pagination, .fullwidth #body > .modular-row, #body, #header, #footer {
       padding-left: 4rem;
       padding-right: 4rem; } }
   @media only all and (max-width: 47.938rem) {
-    .padding-horiz, .fullwidth #header, .fullwidth #breadcrumbs, .fullwidth .blog-header, .fullwidth .blog-content-item, .fullwidth .blog-content-list, .fullwidth ul.pagination, .fullwidth #body > .modular-row, #body, #header, #footer {
+    .padding-horiz, .fullwidth #header, .fullwidth #breadcrumbs, .fullwidth .blog-header, .fullwidth .blog-content-item, .fullwidth .content-wrapper, .fullwidth ul.pagination, .fullwidth #body > .modular-row, #body, #header, #footer {
       padding-left: 1rem;
       padding-right: 1rem; } }
 
@@ -159,7 +162,7 @@ b, strong, label, th {
     padding-right: 7rem; }
 .header-image .listing-row:last-child {
   margin-bottom: 2rem; }
-.header-image #body > .blog-header {
+.header-image #body .flush-top {
   margin-top: -9.5rem;
   padding-top: 9rem; }
 .header-image #breadcrumbs {
@@ -645,9 +648,9 @@ ul.pagination {
   #error p {
     margin: 1rem 0; }
 
-.modular.header-image #body > .showcase {
-  margin-top: -9.5rem;
-  padding-top: 9rem; }
+#lightSlider-wrapper {
+  margin-top: -4.7rem; }
+
 .modular.header-image #header {
   background-color: rgba(255, 255, 255, 0);
   box-shadow: none; }

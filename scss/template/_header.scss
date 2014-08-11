@@ -133,7 +133,7 @@
     }
 
     #body {
-        >.blog-header {
+        .flush-top {
             margin-top: - $header-height - $padding-vert - 1.5rem;
             padding-top: $header-height + 4rem;
         }

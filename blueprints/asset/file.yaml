@@ -1,4 +1,4 @@
-assets:
+media:
   video:
     mp4: video/mp4
     mov: video/quicktime
@@ -26,9 +26,9 @@ form:
       type: upload
       label: Upload
       allow:
-        @assets.*.keys
+        @media.*.keys
       accept:
-        @assets.*.values
+        @media.*.values
 
     filename:
       type: text
