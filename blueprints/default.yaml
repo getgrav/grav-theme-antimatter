@@ -55,7 +55,7 @@ form:
               type: textarea
               label: Content
 
-            header.processing:
+            header.process:
               type: checkboxes
               label: Process
               default: [markdown: true, twig: true]
