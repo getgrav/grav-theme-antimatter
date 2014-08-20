@@ -79,7 +79,7 @@ b, strong, label, th {
     #header.scrolled #logo h3 {
       color: #444444 !important;
       font-size: 1.6rem !important; }
-    #header.scrolled #logo a {
+    #header.scrolled #logo a, #header.scrolled #navbar span {
       color: #444444 !important; }
     #header.scrolled #navbar a {
       color: #1bb3e9 !important; }
@@ -746,7 +746,7 @@ ul.pagination {
       float: left; }
     .modular .features.big .feature-content {
       padding-right: 2rem; }
-      .modular .features.big .feature-content.push {
+      .modular .features.big .feature-content.icon-offset {
         margin-left: 5rem; }
       .modular .features.big .feature-content h4 {
         font-size: 1.3rem;
