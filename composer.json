@@ -6,7 +6,6 @@
     "homepage": "http://getgrav.org",
     "license": "MIT",
     "support": {
-        "irc": "irc://irc.freenode.org/grav",
-        "source": "https://github.com/getgrav/grav-theme-antimatter"
+        "irc": "irc://irc.freenode.org/grav"
     }
 }
