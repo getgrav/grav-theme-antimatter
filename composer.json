@@ -16,11 +16,13 @@
         }
     ],
     "require": {
-        "php": ">=5.4.0"
+        "php": ">=5.4.0",
+        "composer/installers": "~1.0"
     },
     "extra": {
+        "installer-name": "antimatter",
         "installer-paths": {
-            "user/themes/antimatter": ["getgrav/grav-theme-antimatter"]
+            "user/themes/{$name}/": ["getgrav/grav-theme-antimatter"]
         }
     }
 }
