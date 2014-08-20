@@ -8,11 +8,13 @@
     "support": {
         "irc": "irc://irc.freenode.org/grav"
     },
-    "authors": {
-        "name": "Grav Developers",
-        "email": "devs@getgrav.org",
-        "homepage": "http://getgrav.org"
-    },
+    "authors": [
+        {
+            "name": "Grav Developers",
+            "email": "devs@getgrav.org",
+            "homepage": "http://getgrav.org"
+        }
+    ],
     "require": {
         "php": ">=5.4.0"
     }
