@@ -1,0 +1,21 @@
+{
+    "name": "getgrav/grav-theme-antimatter",
+    "type": "grav-theme",
+    "description": "The default theme for the Grav flat-file CMS",
+    "keywords": ["theme","grav"],
+    "homepage": "http://getgrav.org",
+    "license": "MIT",
+    "support": {
+        "irc": "irc://irc.freenode.org/grav"
+    },
+    "authors": [
+        {
+            "name": "Grav Developers",
+            "email": "devs@getgrav.org",
+            "homepage": "http://getgrav.org"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0"
+    }
+}

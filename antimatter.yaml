@@ -1,2 +1,9 @@
 enabled: true
 color: blue
+
+streams:
+  scheme:
+    theme:
+      type: ReadOnlyStream
+      paths:
+        - user/themes/antimatter

@@ -4,44 +4,47 @@
 {% block head %}
     <meta charset="utf-8" />
     <title>{% if header.title %}{{ header.title }} | {% endif %}{{ site.title }}</title>
+    <meta name="generator" content="Grav {{ grav_version }}" />
     {% if header.description %}
-        <meta name="description" content="{{ header.description }}">
+        <meta name="description" content="{{ header.description }}" />
     {% else %}
-        <meta name="description" content="{{ site.description }}">
+        <meta name="description" content="{{ site.description }}" />
     {% endif %}
     {% if header.robots %}
-        <meta name="robots" content="{{ header.robots }}">
+        <meta name="robots" content="{{ header.robots }}" />
     {% endif %}
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="{{ theme_url }}/images/favicon.png">
-    <link rel="stylesheet" href="{{ theme_url }}/css-compiled/nucleus.css" type="text/css" />
-    <link rel="stylesheet" href="{{ theme_url }}/css-compiled/template.css" type="text/css" />
-    <link rel="stylesheet" href="{{ theme_url }}/css/font-awesome.min.css" type="text/css" />
-    <!--[if (gte IE 8)&(lte IE 9)]>
-        <script type="text/javascript" src="{{ theme_url }}/js/html5shiv-printshiv.min.js"></script>
-        <link rel="stylesheet" href="{{ theme_url }}/css/nucleus-ie9.css" type="text/css" />
-        <link rel="stylesheet" href="{{ theme_url }}/css/pure-0.5.0/grids-min.css" type="text/css" />
-    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="{{ theme_url }}/images/favicon.png" />
+
     {% block stylesheets %}
+        {% do assets.add('theme://css-compiled/nucleus.css',102) %}
+        {% do assets.add('theme://css-compiled/template.css',101) %}
+        {% do assets.add('theme://css/font-awesome.min.css',100) %}
+
         {% if page.header.lightbox %}
-        <link rel="stylesheet" href="{{ theme_url }}/css/featherlight.min.css" />
+            {% do assets.add('theme://css/featherlight.min.css') %}
         {% endif %}
+
+        {% if user_agent.getBrowserName == 'msie' and user_agent.getBrowserVersion >= 8 and user_agent.getBrowserVersion <= 9 %}
+            {% do assets.add('theme://css/nucleus-ie9.css') %}
+            {% do assets.add('theme://css/pure-0.5.0/grids-min.css') %}
+            {% do assets.add('theme://js/html5shiv-printshiv.min.js') %}
+        {% endif %}
+
+        {{ assets.css() }}
     {% endblock %}
-    {% for stylesheet in stylesheets %}
-        <link rel="stylesheet" href="{{ base_url_relative }}/{{ stylesheet }}" type="text/css" />
-    {% endfor %}
-    <script src="{{ theme_url }}/js/jquery-2.1.1.min.js"></script>
-    <script src="{{ theme_url }}/js/nova-theme.js"></script>
-    <script src="{{ theme_url }}/js/modernizr.custom.71422.js"></script>
+
     {% block javascripts %}
+        {% do assets.add('theme://js/jquery-2.1.1.min.js',101) %}
+        {% do assets.add('theme://js/modernizr.custom.71422.js',100) %}
+        {% do assets.add('theme://js/nova-theme.js') %}
+        {% do assets.add('theme://js/pushy.min.js') %}
+
         {% if page.header.lightbox %}
-        <script src="{{ theme_url }}/js/featherlight.min.js"></script>
-        <script>
-        $(function () {
-            $('a[rel="lightbox"]').featherlight();
-        });
-        </script>
+            {% do assets.add('theme://js/featherlight.min.js') %}
         {% endif %}
+
+        {{ assets.js() }}
     {% endblock %}
 {% endblock head%}
 
@@ -87,6 +90,12 @@
         </footer>
         {% endblock %}
     </div>
-    <script src="{{ theme_url }}/js/pushy.min.js"></script>
+    {% if page.header.lightbox %}
+    <script>
+    $(function () {
+        $('a[rel="lightbox"]').featherlight();
+    });
+    </script>
+    {% endif %}
 </body>
 </html>
