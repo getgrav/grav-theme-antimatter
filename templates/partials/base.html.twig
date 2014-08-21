@@ -65,7 +65,9 @@
                 </div>
                 <div id="navbar">
                     {% block header_extra %}{% endblock %}
+                    {% block header_navigation %}
                     {% include 'partials/navigation.html.twig' %}
+                    {% endblock %}
                     <span class="panel-activation menu-btn">&#9776;</span>
                 </div>
 
@@ -90,6 +92,7 @@
         </footer>
         {% endblock %}
     </div>
+    {% block bottom %}
     {% if page.header.lightbox %}
     <script>
     $(function () {
@@ -97,5 +100,6 @@
     });
     </script>
     {% endif %}
+    {% endblock %}
 </body>
 </html>

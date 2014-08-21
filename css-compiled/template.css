@@ -134,6 +134,14 @@ b, strong, label, th {
             -ms-transform: scaleX(0.75);
             -o-transform: scaleX(0.75);
             transform: scaleX(0.75); }
+          #header #navbar ul li a.active:after {
+            top: 0;
+            visibility: visible;
+            -webkit-transform: scaleX(0.75);
+            -moz-transform: scaleX(0.75);
+            -ms-transform: scaleX(0.75);
+            -o-transform: scaleX(0.75);
+            transform: scaleX(0.75); }
         #header #navbar ul li.active a:after {
           top: 0;
           visibility: visible;
@@ -691,7 +699,7 @@ ul.pagination {
       background: rgba(255, 255, 255, 0.2); }
 
 .modular .features {
-  padding: 3rem 0;
+  padding: 6rem 0;
   text-align: center; }
   .modular .features:after {
     content: "";
@@ -757,7 +765,7 @@ ul.pagination {
 
 .callout {
   background: #f6f6f6;
-  padding: 3rem 0.938rem; }
+  padding: 6rem 0.938rem; }
   @media only all and (max-width: 59.938rem) {
     .callout {
       text-align: center; } }
