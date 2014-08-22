@@ -155,7 +155,7 @@ b, strong, label, th {
           display: none; } }
     #header #navbar .panel-activation {
       display: none;
-      font-size: 2rem;
+      font-size: 1.8rem;
       cursor: pointer;
       float: right; }
       @media only all and (max-width: 59.938em) {
@@ -716,6 +716,9 @@ ul.pagination {
         font-size: 1rem; } }
   .modular .features .feature-items {
     margin-top: 2rem; }
+    @supports not (flex-wrap: wrap) {
+      .modular .features .feature-items {
+        overflow: hidden; } }
   .modular .features .feature {
     display: block;
     float: left;
