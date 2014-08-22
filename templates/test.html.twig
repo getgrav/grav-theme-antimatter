@@ -1,0 +1,10 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block content %}
+    {% cache 'github_api_stars' 600 %}
+    <span class="button"><i class="fa fa-github"></i> {{ github.client.api('repo').show('getgrav', 'grav')['stargazers_count'] }} stargazers</span>
+    {% endcache %}
+
+
+	{{ page.content }}
+{% endblock %}
