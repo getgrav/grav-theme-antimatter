@@ -108,6 +108,7 @@
 
 		.panel-activation {
 			@extend %vertical-align;
+            padding: 1rem;
 			display: none;
 			font-size: 1.8rem;
 			cursor: pointer;

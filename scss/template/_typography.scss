@@ -194,3 +194,19 @@ hr {
 	color: $white;
 }
 
+// Label
+.label {
+    vertical-align: middle;
+    background: $core-accent;
+    border-radius: 100%;
+    color: $white;
+    height: 1rem;
+    min-width: 1rem;
+    line-height: 1rem;
+    display: inline-block;
+    text-align: center;
+    font-size: $core-font-size - 0.3rem;
+    font-family: $font-family-header;
+    margin-right: 0.75rem;
+}
+
