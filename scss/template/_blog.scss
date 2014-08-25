@@ -122,6 +122,9 @@
 // Breadcrumbs
 div#breadcrumbs {
 	padding-left: 0;
+    @include breakpoint(mobile-only) {
+        display: none;
+    }
 }
 
 // Sidebar

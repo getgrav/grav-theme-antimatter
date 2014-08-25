@@ -52,11 +52,11 @@ b, strong, label, th {
 .padding-horiz, .fullwidth #header, .fullwidth #breadcrumbs, .fullwidth .blog-header, .fullwidth .blog-content-item, .fullwidth .content-wrapper, .fullwidth ul.pagination, .fullwidth #body > .modular-row, #body, #header, #footer {
   padding-left: 7rem;
   padding-right: 7rem; }
-  @media only all and (max-width: 59.938rem) {
+  @media only all and (max-width: 59.938em) {
     .padding-horiz, .fullwidth #header, .fullwidth #breadcrumbs, .fullwidth .blog-header, .fullwidth .blog-content-item, .fullwidth .content-wrapper, .fullwidth ul.pagination, .fullwidth #body > .modular-row, #body, #header, #footer {
       padding-left: 4rem;
       padding-right: 4rem; } }
-  @media only all and (max-width: 47.938rem) {
+  @media only all and (max-width: 47.938em) {
     .padding-horiz, .fullwidth #header, .fullwidth #breadcrumbs, .fullwidth .blog-header, .fullwidth .blog-content-item, .fullwidth .content-wrapper, .fullwidth ul.pagination, .fullwidth #body > .modular-row, #body, #header, #footer {
       padding-left: 1rem;
       padding-right: 1rem; } }
@@ -134,6 +134,14 @@ b, strong, label, th {
             -ms-transform: scaleX(0.75);
             -o-transform: scaleX(0.75);
             transform: scaleX(0.75); }
+          #header #navbar ul li a.active:after {
+            top: 0;
+            visibility: visible;
+            -webkit-transform: scaleX(0.75);
+            -moz-transform: scaleX(0.75);
+            -ms-transform: scaleX(0.75);
+            -o-transform: scaleX(0.75);
+            transform: scaleX(0.75); }
         #header #navbar ul li.active a:after {
           top: 0;
           visibility: visible;
@@ -142,15 +150,16 @@ b, strong, label, th {
           -ms-transform: scaleX(0.75);
           -o-transform: scaleX(0.75);
           transform: scaleX(0.75); }
-      @media only all and (max-width: 59.938rem) {
+      @media only all and (max-width: 59.938em) {
         #header #navbar ul {
           display: none; } }
     #header #navbar .panel-activation {
+      padding: 1rem;
       display: none;
-      font-size: 2rem;
+      font-size: 1.8rem;
       cursor: pointer;
       float: right; }
-      @media only all and (max-width: 59.938rem) {
+      @media only all and (max-width: 59.938em) {
         #header #navbar .panel-activation {
           display: inline-block; } }
 
@@ -220,30 +229,30 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 3.2rem; }
-  @media only all and (max-width: 47.938rem) {
+  @media only all and (max-width: 47.938em) {
     h1 {
       font-size: 2.5rem;
       line-height: 1.2;
       margin-bottom: 2.5rem; } }
 
-@media only all and (min-width: 48rem) and (max-width: 59.938rem) {
+@media only all and (min-width: 48em) and (max-width: 59.938em) {
   h2 {
     font-size: 2.1rem; } }
-@media only all and (max-width: 47.938rem) {
+@media only all and (max-width: 47.938em) {
   h2 {
     font-size: 2rem; } }
 
-@media only all and (min-width: 48rem) and (max-width: 59.938rem) {
+@media only all and (min-width: 48em) and (max-width: 59.938em) {
   h3 {
     font-size: 1.7rem; } }
-@media only all and (max-width: 47.938rem) {
+@media only all and (max-width: 47.938em) {
   h3 {
     font-size: 1.6rem; } }
 
-@media only all and (min-width: 48rem) and (max-width: 59.938rem) {
+@media only all and (min-width: 48em) and (max-width: 59.938em) {
   h4 {
     font-size: 1.35rem; } }
-@media only all and (max-width: 47.938rem) {
+@media only all and (max-width: 47.938em) {
   h4 {
     font-size: 1.25rem; } }
 
@@ -264,10 +273,10 @@ h1 + h2 {
   text-align: center;
   font-family: "Raleway", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
   font-weight: 300; }
-  @media only all and (min-width: 48rem) and (max-width: 59.938rem) {
+  @media only all and (min-width: 48em) and (max-width: 59.938em) {
     h1 + h2 {
       font-size: 1.6rem; } }
-  @media only all and (max-width: 47.938rem) {
+  @media only all and (max-width: 47.938em) {
     h1 + h2 {
       font-size: 1.5rem; } }
 
@@ -278,10 +287,10 @@ h2 + h3 {
   text-align: center;
   font-family: "Raleway", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
   font-weight: 300; }
-  @media only all and (min-width: 48rem) and (max-width: 59.938rem) {
+  @media only all and (min-width: 48em) and (max-width: 59.938em) {
     h2 + h3 {
       font-size: 1.6rem; } }
-  @media only all and (max-width: 47.938rem) {
+  @media only all and (max-width: 47.938em) {
     h2 + h3 {
       font-size: 1.5rem; } }
 
@@ -355,6 +364,20 @@ hr {
   background: #1bb3e9;
   color: white; }
 
+.label {
+  vertical-align: middle;
+  background: #1bb3e9;
+  border-radius: 100%;
+  color: white;
+  height: 1rem;
+  min-width: 1rem;
+  line-height: 1rem;
+  display: inline-block;
+  text-align: center;
+  font-size: 0.7rem;
+  font-family: "Montserrat", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+  margin-right: 0.75rem; }
+
 fieldset {
   border: 1px solid #dddddd; }
 
@@ -426,19 +449,19 @@ td {
 
 .two-column-bullet {
   width: 50%; }
-  @media only all and (max-width: 47.938rem) {
+  @media only all and (max-width: 47.938em) {
     .two-column-bullet {
       width: 100%; } }
 
 .three-column-bullet {
   width: 33.33333%; }
-  @media only all and (max-width: 47.938rem) {
+  @media only all and (max-width: 47.938em) {
     .three-column-bullet {
       width: 100%; } }
 
 .four-column-bullet {
   width: 25%; }
-  @media only all and (max-width: 47.938rem) {
+  @media only all and (max-width: 47.938em) {
     .four-column-bullet {
       width: 100%; } }
 
@@ -465,80 +488,34 @@ td {
 .bullet-content {
   margin-left: 4.55rem; }
 
+.sb-slidebar {
+  background-color: #333333 !important; }
+
 #panel {
-  color: white; }
+  padding-top: 1rem;
+  color: #dddddd; }
   #panel .navigation {
     list-style: none;
     padding: 0; }
     #panel .navigation li {
-      padding: 0.5rem 1rem;
-      border-bottom: 1px solid #404040;
-      font-weight: 600; }
-      #panel .navigation li.active {
-        background: #fff; }
-        #panel .navigation li.active a {
+      border-bottom: 1px solid #3d3d3d; }
+      #panel .navigation li a {
+        color: #dddddd;
+        display: block;
+        padding: 0.5rem 1rem;
+        font-weight: 600; }
+        #panel .navigation li a:hover {
+          color: white;
+          background-color: #262626; }
+        #panel .navigation li a:last-child {
+          border-bottom: 0; }
+      #panel .navigation li.active a {
+        background: #fff;
+        color: #444444; }
+        #panel .navigation li.active a:hover {
           color: #444444; }
-          #panel .navigation li.active a:hover {
-            color: #444444; }
-      #panel .navigation li:last-child {
-        border-bottom: 0; }
-      #panel .navigation li a:hover {
-        color: white; }
-
-/* Menu Appearance */
-.pushy {
-  position: fixed;
-  width: 250px;
-  height: 100%;
-  top: 0;
-  z-index: 9999;
-  background: #333333;
-  overflow: auto;
-  -webkit-overflow-scrolling: touch;
-  /* enables momentum scrolling in iOS overflow elements */ }
-
-/* Menu Movement */
-.pushy-left {
-  -webkit-transform: translate3d(-250px, 0, 0);
-  -moz-transform: translate3d(-250px, 0, 0);
-  -ms-transform: translate3d(-250px, 0, 0);
-  -o-transform: translate3d(-250px, 0, 0);
-  transform: translate3d(-250px, 0, 0); }
-
-.pushy-open {
-  -webkit-transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
-  -ms-transform: translate3d(0, 0, 0);
-  -o-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0); }
-
-.container-push, .push-push {
-  -webkit-transform: translate3d(250px, 0, 0);
-  -moz-transform: translate3d(250px, 0, 0);
-  -ms-transform: translate3d(250px, 0, 0);
-  -o-transform: translate3d(250px, 0, 0);
-  transform: translate3d(250px, 0, 0); }
-
-/* Menu Transitions */
-.pushy, #container, .push {
-  -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.16, 0.68, 0.43, 0.99);
-  -moz-transition: -moz-transform 0.2s cubic-bezier(0.16, 0.68, 0.43, 0.99);
-  transition: transform 0.2s cubic-bezier(0.16, 0.68, 0.43, 0.99);
-  /* improves performance issues on mobile*/
-  -webkit-perspective: 1000; }
-
-/* Site Overlay */
-.site-overlay {
-  display: none; }
-
-.pushy-active .site-overlay {
-  display: block;
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 250px;
-  z-index: 9999; }
+      #panel .navigation li:first-child {
+        border-top: 1px solid #3d3d3d; }
 
 .blog-header {
   padding-top: 2rem;
@@ -551,10 +528,10 @@ td {
   .blog-header h1 {
     font-size: 4rem;
     margin-top: 0; }
-    @media only all and (min-width: 48rem) and (max-width: 59.938rem) {
+    @media only all and (min-width: 48em) and (max-width: 59.938em) {
       .blog-header h1 {
         font-size: 3rem; } }
-    @media only all and (max-width: 47.938rem) {
+    @media only all and (max-width: 47.938em) {
       .blog-header h1 {
         font-size: 2.5rem;
         line-height: 1.2;
@@ -619,10 +596,13 @@ td {
 
 div#breadcrumbs {
   padding-left: 0; }
+  @media only all and (max-width: 47.938em) {
+    div#breadcrumbs {
+      display: none; } }
 
 #sidebar {
   padding-left: 3rem; }
-  @media only all and (max-width: 47.938rem) {
+  @media only all and (max-width: 47.938em) {
     #sidebar {
       padding-left: 0; } }
   #sidebar .sidebar-content {
@@ -670,10 +650,10 @@ ul.pagination {
   .modular .showcase h1 {
     font-size: 4rem;
     margin-top: 0; }
-    @media only all and (min-width: 48rem) and (max-width: 59.938rem) {
+    @media only all and (min-width: 48em) and (max-width: 59.938em) {
       .modular .showcase h1 {
         font-size: 3rem; } }
-    @media only all and (max-width: 47.938rem) {
+    @media only all and (max-width: 47.938em) {
       .modular .showcase h1 {
         font-size: 2.5rem;
         line-height: 1.2;
@@ -691,7 +671,7 @@ ul.pagination {
       background: rgba(255, 255, 255, 0.2); }
 
 .modular .features {
-  padding: 3rem 0;
+  padding: 6rem 0;
   text-align: center; }
   .modular .features:after {
     content: "";
@@ -703,11 +683,14 @@ ul.pagination {
   .modular .features p {
     margin: 1rem 0;
     font-size: 1.2rem; }
-    @media only all and (max-width: 47.938rem) {
+    @media only all and (max-width: 47.938em) {
       .modular .features p {
         font-size: 1rem; } }
   .modular .features .feature-items {
     margin-top: 2rem; }
+    @supports not (flex-wrap: wrap) {
+      .modular .features .feature-items {
+        overflow: hidden; } }
   .modular .features .feature {
     display: block;
     float: left;
@@ -715,11 +698,11 @@ ul.pagination {
     vertical-align: top;
     margin-top: 2rem;
     margin-bottom: 1rem; }
-    @media only all and (min-width: 30.063rem) and (max-width: 47.938rem) {
+    @media only all and (min-width: 30.063em) and (max-width: 47.938em) {
       .modular .features .feature {
         margin-top: 1rem;
         width: 50%; } }
-    @media only all and (max-width: 30rem) {
+    @media only all and (max-width: 30em) {
       .modular .features .feature {
         margin-top: 1rem;
         width: 100%; } }
@@ -737,7 +720,7 @@ ul.pagination {
     text-align: center; }
     .modular .features.big .feature {
       width: 50%; }
-      @media only all and (max-width: 30rem) {
+      @media only all and (max-width: 30em) {
         .modular .features.big .feature {
           margin-top: 1rem;
           width: 100%; } }
@@ -757,21 +740,21 @@ ul.pagination {
 
 .callout {
   background: #f6f6f6;
-  padding: 3rem 0.938rem; }
-  @media only all and (max-width: 59.938rem) {
+  padding: 6rem 0.938rem; }
+  @media only all and (max-width: 59.938em) {
     .callout {
       text-align: center; } }
   .callout .align-left {
     float: left;
     margin-right: 2rem; }
-    @media only all and (max-width: 59.938rem) {
+    @media only all and (max-width: 59.938em) {
       .callout .align-left {
         float: none;
         margin-right: 0; } }
   .callout .align-right {
     float: right;
     margin-left: 2rem; }
-    @media only all and (max-width: 59.938rem) {
+    @media only all and (max-width: 59.938em) {
       .callout .align-right {
         float: none;
         margin-left: 0; } }

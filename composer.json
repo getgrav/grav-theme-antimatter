@@ -10,12 +10,19 @@
     },
     "authors": [
         {
-            "name": "Grav Developers",
+            "name": "Team Grav",
             "email": "devs@getgrav.org",
             "homepage": "http://getgrav.org"
         }
     ],
     "require": {
-        "php": ">=5.4.0"
+        "php": ">=5.4.0",
+        "composer/installers": "~1.0"
+    },
+    "extra": {
+        "installer-name": "antimatter",
+        "installer-paths": {
+            "user/themes/{$name}/": ["getgrav/grav-theme-antimatter"]
+        }
     }
 }

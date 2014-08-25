@@ -85,6 +85,12 @@
 						visibility: visible;
 						@include transform(scaleX(0.75));
 					}
+
+					&.active:after {
+						top: 0;
+						visibility: visible;
+						@include transform(scaleX(0.75));
+					}
 				}
 
 				&.active {
@@ -102,8 +108,9 @@
 
 		.panel-activation {
 			@extend %vertical-align;
+            padding: 1rem;
 			display: none;
-			font-size: 2rem;
+			font-size: 1.8rem;
 			cursor: pointer;
 			float: right;
 			@include breakpoint(desktop-only) {

@@ -1,0 +1,10 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block content %}
+    <h2>GitHub Plugin</h2>
+    {% cache 'github_api' 600 %}
+        {% include 'github.html.twig' %}
+    {% endcache %}
+
+	{{ page.content }}
+{% endblock %}

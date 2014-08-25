@@ -1,8 +1,40 @@
 {% extends 'partials/base.html.twig' %}
 
+{% macro pageLinkName(text) %}{{ text|lower|replace({' ':'_'}) }}{% endmacro %}
+
+{% block javascripts %}
+	{% do assets.add('theme://js/singlePageNav.min.js') %}
+	{{ parent() }}
+{% endblock %}
+
+{% block bottom %}
+	{{ parent() }}
+	<script>
+	// singlePageNav initialization & configuration
+    $('#navbar').singlePageNav({
+        offset: $('#header').outerHeight(),
+        filter: ':not(.external)',
+        updateHash: true,
+        currentClass: 'active'
+    });
+	</script>
+{% endblock %}
+
+{% block header_navigation %}
+<ul class="navigation">
+    {% for module in page.collection() %}
+
+            {% set current_module = (module.active or module.activeChild) ? 'active' : '' %}
+            <li class="{{ current_module }}"><a href="#{{ _self.pageLinkName(module.menu) }}">{{ module.menu }}</a></li>
+
+    {% endfor %}
+</ul>
+{% endblock %}
+
 {% block content %}
     {{ page.content }}
     {% for module in page.collection() %}
+        <div id="{{ _self.pageLinkName(module.menu) }}"></div>
         {{ module.content }}
     {% endfor %}
 {% endblock %}

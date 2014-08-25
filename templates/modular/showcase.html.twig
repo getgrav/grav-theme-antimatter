@@ -7,7 +7,7 @@
     {{ content }}
 
     {% for button in page.header.buttons %}
-        <a class="button{% if button.primary %} primary{% endif %}" href="{{ base_url_relative }}{{ button.url }}">{{ button.text }}</a>
+        <a class="button{% if button.primary %} primary{% endif %}" href="{{ button.url }}">{{ button.text }}</a>
     {% endfor %}
 
 </div>
