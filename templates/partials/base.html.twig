@@ -26,6 +26,10 @@
             {% do assets.addCss('theme://css/featherlight.min.css') %}
         {% endif %}
 
+        {% if browser.getBrowser == 'msie' and browser.getVersion == 10 %}
+            {% do assets.addCss('theme://css/nucleus-ie10.css') %}
+        {% endif %}
+
         {% if browser.getBrowser == 'msie' and browser.getVersion >= 8 and browser.getVersion <= 9 %}
             {% do assets.addCss('theme://css/nucleus-ie9.css') %}
             {% do assets.addCss('theme://css/pure-0.5.0/grids-min.css') %}
