@@ -4,15 +4,7 @@
 {% block head %}
     <meta charset="utf-8" />
     <title>{% if header.title %}{{ header.title }} | {% endif %}{{ site.title }}</title>
-    <meta name="generator" content="Grav {{ grav_version }}" />
-    {% if header.description %}
-        <meta name="description" content="{{ header.description }}" />
-    {% else %}
-        <meta name="description" content="{{ site.description }}" />
-    {% endif %}
-    {% if header.robots %}
-        <meta name="robots" content="{{ header.robots }}" />
-    {% endif %}
+    {% include 'partials/metadata.html.twig' %}
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="icon" type="image/png" href="{{ theme_url }}/images/favicon.png" />
 
