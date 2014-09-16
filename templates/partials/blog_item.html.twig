@@ -22,7 +22,10 @@
     </div>
 
     <div class="list-blog-padding">
-    {% if truncate %}
+    {% if truncate and page.summary != page.content %}
+        <p>{{ page.summary }}</p>
+        <p><a href="{{ page.url }}">Continue Reading...</a></p>
+    {% elseif truncate %}
         <p>{{ page.content|truncate(550) }}</p>
         <p><a href="{{ page.url }}">Continue Reading...</a></p>
     {% else %}
