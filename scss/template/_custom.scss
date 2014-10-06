@@ -1,4 +1,13 @@
 // Your custom SCSS should be written here...
 #lightSlider-wrapper {
-    margin-top: -4.7rem
+    margin-top: -4.7rem;
+
+    .csSlideOuter {
+        .csPager.cSpg {
+            > li a {
+                z-index: 1;
+            }
+        }
+    }
 }
+
