@@ -1,0 +1,7 @@
+title: Features
+@extends: default
+
+form:
+  fields:
+    tabs:
+      type: tabs
