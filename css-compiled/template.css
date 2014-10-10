@@ -1,5 +1,5 @@
 @import url(//fonts.googleapis.com/css?family=Montserrat:400|Raleway:300,400,600|Inconsolata);
-#header #logo h3, #header #navbar ul, #header #navbar .panel-activation, #footer p {
+#header #logo h3, #header #navbar ul.navigation, #header #navbar .panel-activation, #footer p {
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -99,42 +99,52 @@ b, strong, label, th {
   #header #navbar {
     font-size: 0.9rem; }
     #header #navbar ul {
-      display: inline-block;
       margin: 0;
-      list-style: none;
-      float: right; }
-      #header #navbar ul li {
-        float: left;
-        position: relative; }
-        #header #navbar ul li a {
-          font-family: "Montserrat", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
-          display: inline-block;
-          padding: 0.1rem 0.8rem; }
-          #header #navbar ul li a:before, #header #navbar ul li a:after {
-            content: "";
-            position: absolute;
-            width: 100%;
-            height: 1px;
-            bottom: 0;
-            left: 0;
-            background-color: #1BB3E9;
-            visibility: hidden;
-            -webkit-transform: scaleX(0);
-            -moz-transform: scaleX(0);
-            -ms-transform: scaleX(0);
-            -o-transform: scaleX(0);
-            transform: scaleX(0);
-            -webkit-transition: all 0.2s ease;
-            -moz-transition: all 0.2s ease;
-            transition: all 0.2s ease; }
-          #header #navbar ul li a:hover:before {
-            visibility: visible;
-            -webkit-transform: scaleX(0.75);
-            -moz-transform: scaleX(0.75);
-            -ms-transform: scaleX(0.75);
-            -o-transform: scaleX(0.75);
-            transform: scaleX(0.75); }
-          #header #navbar ul li a.active:after {
+      padding: 0;
+      list-style: none; }
+      #header #navbar ul.navigation {
+        display: inline-block;
+        float: right; }
+        #header #navbar ul.navigation li {
+          float: left;
+          position: relative; }
+          #header #navbar ul.navigation li a {
+            font-family: "Montserrat", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+            display: inline-block;
+            padding: 0.3rem 0.8rem; }
+            #header #navbar ul.navigation li a:before, #header #navbar ul.navigation li a:after {
+              content: "";
+              position: absolute;
+              width: 100%;
+              height: 1px;
+              bottom: 0;
+              left: 0;
+              background-color: #1BB3E9;
+              visibility: hidden;
+              -webkit-transform: scaleX(0);
+              -moz-transform: scaleX(0);
+              -ms-transform: scaleX(0);
+              -o-transform: scaleX(0);
+              transform: scaleX(0);
+              -webkit-transition: all 0.2s ease;
+              -moz-transition: all 0.2s ease;
+              transition: all 0.2s ease; }
+            #header #navbar ul.navigation li a:hover:before {
+              visibility: visible;
+              -webkit-transform: scaleX(0.75);
+              -moz-transform: scaleX(0.75);
+              -ms-transform: scaleX(0.75);
+              -o-transform: scaleX(0.75);
+              transform: scaleX(0.75); }
+            #header #navbar ul.navigation li a.active:after {
+              top: 0;
+              visibility: visible;
+              -webkit-transform: scaleX(0.75);
+              -moz-transform: scaleX(0.75);
+              -ms-transform: scaleX(0.75);
+              -o-transform: scaleX(0.75);
+              transform: scaleX(0.75); }
+          #header #navbar ul.navigation li.active a:after {
             top: 0;
             visibility: visible;
             -webkit-transform: scaleX(0.75);
@@ -142,17 +152,33 @@ b, strong, label, th {
             -ms-transform: scaleX(0.75);
             -o-transform: scaleX(0.75);
             transform: scaleX(0.75); }
-        #header #navbar ul li.active a:after {
-          top: 0;
-          visibility: visible;
-          -webkit-transform: scaleX(0.75);
-          -moz-transform: scaleX(0.75);
-          -ms-transform: scaleX(0.75);
-          -o-transform: scaleX(0.75);
-          transform: scaleX(0.75); }
-      @media only all and (max-width: 59.938em) {
-        #header #navbar ul {
-          display: none; } }
+          #header #navbar ul.navigation li ul {
+            display: none;
+            padding: 0;
+            box-shadow: 0 0.05rem 1rem rgba(0, 0, 0, 0.15) !important; }
+          #header #navbar ul.navigation li ul ul {
+            left: 100%;
+            top: 0; }
+          #header #navbar ul.navigation li:hover > ul {
+            display: block;
+            position: absolute;
+            background: #fff;
+            width: 10rem; }
+          #header #navbar ul.navigation li:hover li {
+            float: none;
+            margin: 0;
+            padding: 0; }
+            #header #navbar ul.navigation li:hover li a {
+              padding: 0.5rem 0.8rem;
+              display: block; }
+              #header #navbar ul.navigation li:hover li a:before, #header #navbar ul.navigation li:hover li a:after {
+                display: none; }
+            #header #navbar ul.navigation li:hover li.active > a {
+              background: #1BB3E9;
+              color: #fff; }
+        @media only all and (max-width: 59.938em) {
+          #header #navbar ul.navigation {
+            display: none; } }
     #header #navbar .panel-activation {
       padding: 1rem;
       display: none;
@@ -509,13 +535,28 @@ td {
           background-color: #262626; }
         #panel .navigation li a:last-child {
           border-bottom: 0; }
-      #panel .navigation li.active a {
+      #panel .navigation li.active > a {
         background: #fff;
         color: #444; }
-        #panel .navigation li.active a:hover {
+        #panel .navigation li.active > a:hover {
           color: #444; }
       #panel .navigation li:first-child {
         border-top: 1px solid #3d3d3d; }
+      #panel .navigation li ul {
+        list-style: none;
+        padding: 0; }
+        #panel .navigation li ul li {
+          border: 0 !important; }
+          #panel .navigation li ul li a {
+            color: #c4c4c4;
+            padding: 0.2rem 1rem 0.2rem 2rem;
+            font-size: 0.9rem; }
+          #panel .navigation li ul li li a {
+            padding-left: 3rem; }
+            #panel .navigation li ul li li a li a {
+              padding-left: 4rem; }
+          #panel .navigation li ul li.active > a {
+            background: #ccc; }
 
 .blog-header {
   padding-top: 2rem;

@@ -1,9 +1,29 @@
-<ul class="navigation">
-    {% for page in pages.children %}
-	    {% if page.visible %}
-	    	{% set current_page = (page.active or page.activeChild) ? 'active' : '' %}
-	    	<li class="{{ current_page }}"><a href="{{ page.url }}">{{ page.menu }}</a></li>
-	    {% endif %}
+{% macro loop(page) %}
+    {% for p in page.children %}
+        {% if p.visible %}
+            {% set current_page = (p.active or p.activeChild) ? 'active' : '' %}
+            <li class="{{ current_page }}">
+                <a href="{{ p.url }}">{{ p.menu }}</a>
+                {% if p.children.count > 0 %}
+                    <ul>
+                        {{ _self.loop(p) }}
+                    </ul>
+                {% endif %}
+            </li>
+        {% endif %}
     {% endfor %}
-</ul>                
+{% endmacro %}
+
+<ul class="navigation">
+    {% if config.themes.antimatter.dropdown.enabled %}
+        {{ _self.loop(pages) }}
+    {% else %}
+        {% for page in pages.children %}
+            {% if page.visible %}
+                {% set current_page = (page.active or page.activeChild) ? 'active' : '' %}
+                <li class="{{ current_page }}"><a href="{{ page.url }}">{{ page.menu }}</a></li>
+            {% endif %}
+        {% endfor %}
+    {% endif %}
+</ul>           
 

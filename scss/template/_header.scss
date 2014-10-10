@@ -54,56 +54,106 @@
 	#navbar {
 		font-size: $core-font-size - 0.1rem;
 		ul {
-			@extend %vertical-align;
-			display: inline-block;
+
 			margin: 0;
+			padding: 0;
 			list-style: none;
-			float: right;
-			li {
-				float: left;
-				position: relative;
 
-				a {
-					font-family: $font-family-header;
-					display: inline-block;
-					padding: 0.1rem 0.8rem;
+			&.navigation {
+				@extend %vertical-align;
+				display: inline-block;
+				
+				float: right;
+				li {
+					float: left;
+					position: relative;
 
-					&:before, &:after {
-						content: "";
-						position: absolute;
-						width: 100%;
-						height: 1px;
-						bottom: 0;
-						left: 0;
-						background-color: $core-accent;
-						visibility: hidden;
-						@include transform(scaleX(0));
-						@include transition(all 0.2s ease);
+					a {
+						font-family: $font-family-header;
+						display: inline-block;
+						padding: 0.3rem 0.8rem;
+
+						&:before, &:after {
+							content: "";
+							position: absolute;
+							width: 100%;
+							height: 1px;
+							bottom: 0;
+							left: 0;
+							background-color: $core-accent;
+							visibility: hidden;
+							@include transform(scaleX(0));
+							@include transition(all 0.2s ease);
+						}
+
+						&:hover:before {
+							visibility: visible;
+							@include transform(scaleX(0.75));
+						}
+
+						&.active:after {
+							top: 0;
+							visibility: visible;
+							@include transform(scaleX(0.75));
+						}
 					}
 
-					&:hover:before {
-						visibility: visible;
-						@include transform(scaleX(0.75));
+					&.active {
+						a:after {
+							top: 0;
+							visibility: visible;
+							@include transform(scaleX(0.75));
+						}
 					}
 
-					&.active:after {
+					// Dropdown Menu Styles
+					ul {
+						display: none;
+						padding: 0;
+						box-shadow: 0 0.05rem 1rem rgba(0,0,0, 0.15) !important;
+					}
+
+					ul ul {
+						left: 100%;
 						top: 0;
-						visibility: visible;
-						@include transform(scaleX(0.75));
+					}	
+
+
+					&:hover {
+						& > ul {
+							display: block;
+							position: absolute;
+							background: #fff;
+							width: 10rem;
+						}
+
+						li {
+							float: none;
+							margin: 0;
+							padding: 0;
+
+							a {
+								padding: 0.5rem 0.8rem;
+								display: block;
+
+								&:before, &:after {
+									display: none;
+								}
+							}
+
+							&.active {
+								& > a {
+									background: $core-accent;
+									color: $white;
+								}
+							}
+						}
 					}
 				}
-
-				&.active {
-					a:after {
-						top: 0;
-						visibility: visible;
-						@include transform(scaleX(0.75));
-					}
+				@include breakpoint(desktop-only) {
+					display: none;
 				}
-			}
-			@include breakpoint(desktop-only) {
-				display: none;
-			}
+			}	
 		}
 
 		.panel-activation {
