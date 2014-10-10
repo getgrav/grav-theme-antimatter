@@ -12,4 +12,5 @@ bugs: https://github.com/getgrav/grav-theme-antimatter/issues
 license: MIT
 
 form:
+  validation: strict
   fields:
