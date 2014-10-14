@@ -83,6 +83,8 @@ b, strong, label, th {
       color: #444 !important; }
     #header.scrolled #navbar a {
       color: #1BB3E9 !important; }
+      #header.scrolled #navbar a:hover {
+        color: #0e6e90 !important; }
     #header.scrolled #navbar a:before, #header.scrolled #navbar a:after {
       background-color: #1BB3E9 !important; }
   #header > .grid, #header #logo, #header #navbar {
@@ -162,7 +164,7 @@ b, strong, label, th {
           #header #navbar ul.navigation li:hover > ul {
             display: block;
             position: absolute;
-            background: #fff;
+            background: rgba(255, 255, 255, 0.9);
             width: 10rem; }
           #header #navbar ul.navigation li:hover li {
             float: none;
@@ -211,6 +213,10 @@ b, strong, label, th {
     color: #FFFFFF; }
   .header-image #header a:before, .header-image #header a:after {
     background-color: rgba(255, 255, 255, 0.7) !important; }
+  .header-image #header #navbar ul.navigation ul li a {
+    color: #1BB3E9; }
+    .header-image #header #navbar ul.navigation ul li a:hover {
+      color: #0e6e90; }
 
 #footer {
   position: absolute;
