@@ -25,6 +25,9 @@
 		}
 		#navbar a {
 			color: $core-accent !important;
+            &:hover {
+                color: darken($core-accent, 20%) !important;
+            }
 		}
 		#navbar a:before, #navbar a:after {
 			background-color: $core-accent !important;
@@ -123,7 +126,7 @@
 						& > ul {
 							display: block;
 							position: absolute;
-							background: #fff;
+							background: rgba($white, 0.9);
 							width: 10rem;
 						}
 
@@ -213,6 +216,16 @@
         a:before, a:after {
         	background-color: rgba($header-text,0.7) !important;
         }
-    }
 
+        #navbar ul.navigation  {
+
+            ul li a {
+
+                color: $core-accent;
+                &:hover {
+                    color: darken($core-accent, 20%);
+                }
+            }
+        }
+    }
 }
