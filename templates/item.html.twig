@@ -1,6 +1,6 @@
 {% embed 'partials/base.html.twig' %}
 
-	{% set base_url = base_url_relative ~ site.blog.route %}
+	{% set base_url = page.parent.url %}
 
 	{% block content %}
 		{% include 'breadcrumbs.html.twig' %}
@@ -13,12 +13,6 @@
 				{% include 'partials/sidebar.html.twig' %}
 			</div>
 		</div>
-	{% endblock %}
-
-	{% block pagination %}
-	    {% if pagination %}
-	    {% include 'pagination.html.twig' %}
-	    {% endif %}
 	{% endblock %}
 
 {% endembed %}
