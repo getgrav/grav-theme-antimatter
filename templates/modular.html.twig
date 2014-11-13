@@ -1,34 +1,44 @@
 {% extends 'partials/base.html.twig' %}
 
+{% set show_onpage_menu = header.onpage_menu == true or header.onpage_menu is null %}
 {% macro pageLinkName(text) %}{{ text|lower|replace({' ':'_'}) }}{% endmacro %}
 
 {% block javascripts %}
-	{% do assets.add('theme://js/singlePageNav.min.js') %}
-	{{ parent() }}
+    {% if show_onpage_menu %}
+        {% do assets.add('theme://js/singlePageNav.min.js') %}
+    {% endif %}
+    {{ parent() }}
 {% endblock %}
 
+
 {% block bottom %}
-	{{ parent() }}
-	<script>
-	// singlePageNav initialization & configuration
-    $('#navbar').singlePageNav({
-        offset: $('#header').outerHeight(),
-        filter: ':not(.external)',
-        updateHash: true,
-        currentClass: 'active'
-    });
-	</script>
+    {{ parent() }}
+    {% if show_onpage_menu %}
+        <script>
+        // singlePageNav initialization & configuration
+        $('#navbar').singlePageNav({
+            offset: $('#header').outerHeight(),
+            filter: ':not(.external)',
+            updateHash: true,
+            currentClass: 'active'
+        });
+        </script>
+    {% endif %}
 {% endblock %}
 
 {% block header_navigation %}
-<ul class="navigation">
-    {% for module in page.collection() %}
+    {% if show_onpage_menu %}
+        <ul class="navigation">
+        {% for module in page.collection() %}
 
             {% set current_module = (module.active or module.activeChild) ? 'active' : '' %}
             <li class="{{ current_module }}"><a href="#{{ _self.pageLinkName(module.menu) }}">{{ module.menu }}</a></li>
 
-    {% endfor %}
-</ul>
+        {% endfor %}
+    </ul>
+    {% else %}
+        {{  parent() }}
+    {% endif %}
 {% endblock %}
 
 {% block content %}
