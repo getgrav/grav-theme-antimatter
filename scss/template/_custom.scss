@@ -1,9 +1,8 @@
 // Your custom SCSS should be written here...
-#lightSlider-wrapper {
-    margin-top: -4.7rem;
 
-    .csSlideOuter {
-        .csPager.cSpg {
+.grav-lightslider {
+    .lSSlideOuter {
+        .lSPager.lSpg {
             > li a {
                 z-index: 1;
             }
@@ -11,3 +10,6 @@
     }
 }
 
+#body > script:first-child + .grav-lightslider {
+  margin-top: -3rem;
+}

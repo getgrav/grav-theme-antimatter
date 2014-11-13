@@ -41,6 +41,7 @@ b, strong, label, th {
   padding-right: 0; }
 
 #body {
+  background: #fff;
   padding-top: 8rem;
   padding-bottom: 11rem; }
 
@@ -675,10 +676,11 @@ ul.pagination {
   #error p {
     margin: 1rem 0; }
 
-#lightSlider-wrapper {
-  margin-top: -4.7rem; }
-  #lightSlider-wrapper .csSlideOuter .csPager.cSpg > li a {
-    z-index: 1; }
+.grav-lightslider .lSSlideOuter .lSPager.lSpg > li a {
+  z-index: 1; }
+
+#body > script:first-child + .grav-lightslider {
+  margin-top: -3rem; }
 
 .modular.header-image #header {
   background-color: rgba(255, 255, 255, 0);
