@@ -3,7 +3,10 @@
         {% if p.visible %}
             {% set current_page = (p.active or p.activeChild) ? 'active' : '' %}
             <li class="{{ current_page }}">
-                <a href="{{ p.url }}">{{ p.menu }}</a>
+                <a href="{{ p.url }}">
+                    {% if p.header.icon %}<i class="fa fa-{{ p.header.icon }}"></i>{% endif %}
+                    {{ p.menu }}
+                </a>
                 {% if p.children.count > 0 %}
                     <ul>
                         {{ _self.loop(p) }}
@@ -21,7 +24,12 @@
         {% for page in pages.children %}
             {% if page.visible %}
                 {% set current_page = (page.active or page.activeChild) ? 'active' : '' %}
-                <li class="{{ current_page }}"><a href="{{ page.url }}">{{ page.menu }}</a></li>
+                <li class="{{ current_page }}">
+                    <a href="{{ page.url }}">
+                        {% if page.header.icon %}<i class="fa fa-{{ page.header.icon }}"></i>{% endif %}
+                        {{ page.menu }}
+                    </a>
+                </li>
             {% endif %}
         {% endfor %}
     {% endif %}
