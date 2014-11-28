@@ -676,6 +676,38 @@ ul.pagination {
   #error p {
     margin: 1rem 0; }
 
+.simplesearch h1 {
+  margin-bottom: 0; }
+.simplesearch .center {
+  text-align: center; }
+.simplesearch input {
+  display: inline-block;
+  max-width: 30rem;
+  font-size: 2rem; }
+.simplesearch .search-image {
+  margin-top: 1rem; }
+  .simplesearch .search-image img {
+    border-radius: 4px; }
+    @media only all and (max-width: 47.938em) {
+      .simplesearch .search-image img {
+        display: none; } }
+@media only all and (max-width: 47.938em) {
+  .simplesearch .search-item {
+    margin-left: 0; } }
+.simplesearch .search-details {
+  float: right;
+  margin-top: -2.5rem;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #777777; }
+  @media only all and (max-width: 47.938em) {
+    .simplesearch .search-details {
+      float: none;
+      margin-top: -0.2rem;
+      margin-bottom: 1rem; } }
+.simplesearch hr {
+  border-bottom: 1px solid #eee; }
+
 .grav-lightslider .lSSlideOuter .lSPager.lSpg > li a {
   z-index: 1; }
 
