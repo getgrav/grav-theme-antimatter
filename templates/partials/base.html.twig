@@ -14,38 +14,26 @@
         {% do assets.addCss('theme://css/custom.css',100) %}
         {% do assets.addCss('theme://css/font-awesome.min.css',100) %}
         {% do assets.addCss('theme://css/slidebars.min.css') %}
-
-        {% if page.header.lightbox %}
-            {% do assets.addCss('theme://css/featherlight.min.css') %}
-        {% endif %}
-
         {% if browser.getBrowser == 'msie' and browser.getVersion == 10 %}
             {% do assets.addCss('theme://css/nucleus-ie10.css') %}
         {% endif %}
-
         {% if browser.getBrowser == 'msie' and browser.getVersion >= 8 and browser.getVersion <= 9 %}
             {% do assets.addCss('theme://css/nucleus-ie9.css') %}
             {% do assets.addCss('theme://css/pure-0.5.0/grids-min.css') %}
             {% do assets.addCss('theme://js/html5shiv-printshiv.min.js') %}
         {% endif %}
-
-        {{ assets.css() }}
     {% endblock %}
+    {{ assets.css() }}
 
     {% block javascripts %}
         {% do assets.addJs('theme://js/jquery-2.1.1.min.js',101) %}
         {% do assets.addJs('theme://js/modernizr.custom.71422.js',100) %}
-        {% do assets.addJs('theme://js/nova-theme.js') %}
+        {% do assets.addJs('theme://js/antimatter.js') %}
         {% do assets.addJs('theme://js/slidebars.min.js') %}
-
-        {% if page.header.lightbox %}
-            {% do assets.addJs('theme://js/featherlight.min.js') %}
-        {% endif %}
-
-        {{ assets.js() }}
     {% endblock %}
-{% endblock head%}
+    {{ assets.js() }}
 
+{% endblock head%}
 </head>
 <body id="top" class="{{ page.header.body_classes }}">
     <div id="sb-site">
@@ -98,9 +86,6 @@
             scrollLock: true
           });
         });
-        {% if page.header.lightbox %}
-        $('a[rel="lightbox"]').featherlight();
-        {% endif %}
     });
     </script>
     {% endblock %}
