@@ -14,11 +14,6 @@
         {% do assets.addCss('theme://css/custom.css',100) %}
         {% do assets.addCss('theme://css/font-awesome.min.css',100) %}
         {% do assets.addCss('theme://css/slidebars.min.css') %}
-
-        {% if page.header.lightbox %}
-            {% do assets.addCss('theme://css/featherlight.min.css') %}
-        {% endif %}
-
         {% if browser.getBrowser == 'msie' and browser.getVersion == 10 %}
             {% do assets.addCss('theme://css/nucleus-ie10.css') %}
         {% endif %}
@@ -38,9 +33,6 @@
         {% do assets.addJs('theme://js/nova-theme.js') %}
         {% do assets.addJs('theme://js/slidebars.min.js') %}
 
-        {% if page.header.lightbox %}
-            {% do assets.addJs('theme://js/featherlight.min.js') %}
-        {% endif %}
 
         {{ assets.js() }}
     {% endblock %}
@@ -98,9 +90,6 @@
             scrollLock: true
           });
         });
-        {% if page.header.lightbox %}
-        $('a[rel="lightbox"]').featherlight();
-        {% endif %}
     });
     </script>
     {% endblock %}
