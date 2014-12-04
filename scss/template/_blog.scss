@@ -99,8 +99,8 @@
 	}
 }
 
-// Archives
-.archives {
+// Archives & Related-Pages
+.archives, .related-pages {
 	padding: 0;
 	list-style: none;
 	li {
@@ -110,6 +110,13 @@
 			border-bottom: 0;
 		}
 	}
+}
+
+.related-pages .score {
+    display: inline-block;
+    float: right;
+    color: #999;
+    font-size: 90%
 }
 
 // Syndicate

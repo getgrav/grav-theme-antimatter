@@ -4,6 +4,10 @@
     {% include 'partials/simplesearch_searchbox.html.twig' %}
 </div>
 {% endif %}
+{% if config.plugins.relatedpages.enabled and related_pages|length > 0 %}
+    <h4>Related Posts</h4>
+    {% include 'partials/relatedpages.html.twig' %}
+{% endif %}
 {% if config.plugins.random.enabled %}
 <div class="sidebar-content">
 	<h4>Random Article</h4>
