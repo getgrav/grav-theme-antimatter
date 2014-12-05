@@ -32,17 +32,15 @@
 				{% for child in collection %}
 			        {% include 'partials/blog_item.html.twig' with {'page':child, 'truncate':true} %}
 			    {% endfor %}
+
+                {% if config.plugins.pagination.enabled and collection.params.pagination %}
+                    {% include 'pagination.html.twig' with {'pagination':collection.params.pagination} %}
+                {% endif %}
 			</div>
 			<div id="sidebar" class="block size-1-3 pure-u-1-3">
 				{% include 'partials/sidebar.html.twig' %}
 			</div>
 		</div>
-	{% endblock %}
-
-	{% block pagination %}
-	    {% if config.plugins.pagination.enabled and collection.params.pagination %}
-	    {% include 'pagination.html.twig' with {'pagination':collection.params.pagination} %}
-	    {% endif %}
 	{% endblock %}
 
 {% endembed %}
