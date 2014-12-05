@@ -50,15 +50,14 @@
     {% endif %}
 
     {% if show_prev_next %}
-        {% set collection = page.parent.collection() %}
 
         <p class="prev-next">
-            {% if not collection.isLast(page.path) %}
-                <a class="button" href="{{ collection.prevSibling(page.path).url }}"><i class="fa fa-chevron-left"></i> Previous Post</a>
+            {% if not page.isLast %}
+                <a class="button" href="{{ page.prevSibling.url }}"><i class="fa fa-chevron-left"></i> Previous Post</a>
             {% endif %}
 
-            {% if not collection.isFirst(page.path) %}
-                <a class="button" href="{{ collection.nextSibling(page.path).url }}">Next Post <i class="fa fa-chevron-right"></i></a>
+            {% if not page.isFirst %}
+                <a class="button" href="{{ page.nextSibling.url }}">Next Post <i class="fa fa-chevron-right"></i></a>
             {% endif %}
         </p>
     {% endif %}
