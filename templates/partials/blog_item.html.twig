@@ -7,7 +7,7 @@
         </span>
         {% if page.header.link %}
             <h4>
-                {% if page.header.continue_link is sameas(true) %}
+                {% if page.header.continue_link is not sameas(false) %}
                 <a href="{{ page.url }}"><i class="fa fa-angle-double-right"></i></a>
                 {% endif %}
                 <a href="{{ page.header.link }}">{{ page.title }}</a>
