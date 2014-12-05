@@ -45,6 +45,12 @@ b, strong, label, th {
   padding-top: 8rem;
   padding-bottom: 11rem; }
 
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
 .default-animation, #body, #header, #header #logo h3, .modular .showcase .button {
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
@@ -639,11 +645,13 @@ td {
     .archives li:last-child, .related-pages li:last-child {
       border-bottom: 0; }
 
+.related-pages li a {
+  display: block; }
 .related-pages .score {
-  display: inline-block;
+  display: block;
   float: right;
   color: #999;
-  font-size: 90%; }
+  font-size: 85%; }
 
 .syndicate a {
   margin-bottom: 1rem; }
@@ -668,7 +676,11 @@ div#breadcrumbs {
 
 ul.pagination {
   margin: 0 0 3rem;
-  text-align: left; }
+  text-align: center; }
+
+.prev-next {
+  margin-top: 5rem;
+  text-align: center; }
 
 #error {
   text-align: center;
