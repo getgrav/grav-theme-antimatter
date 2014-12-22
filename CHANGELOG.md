@@ -1,11 +1,12 @@
-# v1.2.6 (dev)
-## 12/20/2014
+# v1.2.6
+## 12/21/2014
 
 1. [](#new)
     * Added support for list of custom menu items in `site.yaml`
-    * Updated README.md with some instructions on how to use some Antimatter features
+    * Updated `README.md` with some instructions on how to use some Antimatter features
 1. [](#improved)
     * Removed `cache.html.twig` file that was used only for testing
+    * Removed unused `color` option in `antimatter.yaml`
 
 # v1.2.5
 ## 12/15/2014
