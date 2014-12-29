@@ -1,3 +1,9 @@
+# v1.2.7
+## 12/29/2014
+
+1. [](#bugfix)
+    * Removed `Fixed` header image to resolve issues with mobile browsers
+
 # v1.2.6
 ## 12/21/2014
 
