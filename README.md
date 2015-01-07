@@ -2,7 +2,7 @@
 
 ![Antimatter](assets/readme_1.png)
 
-Antimatter is the default [Grav][grav] theme. Simple, fast and modern.
+Antimatter is the default [Grav](http://getgrav.org) theme. Simple, fast and modern.
 
 # Installation
 
