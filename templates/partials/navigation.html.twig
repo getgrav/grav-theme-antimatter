@@ -1,6 +1,6 @@
 {% macro loop(page) %}
     {% for p in page.children %}
-        {% if p.visible and p.published|default(true)%}
+        {% if p.visible %}
             {% set current_page = (p.active or p.activeChild) ? 'active' : '' %}
             <li class="{{ current_page }}">
                 <a href="{{ p.url }}">
@@ -22,7 +22,7 @@
         {{ _self.loop(pages) }}
     {% else %}
         {% for page in pages.children %}
-            {% if page.visible and page.published|default(true) %}
+            {% if page.visible %}
                 {% set current_page = (page.active or page.activeChild) ? 'active' : '' %}
                 <li class="{{ current_page }}">
                     <a href="{{ page.url }}">
