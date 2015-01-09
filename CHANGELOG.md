@@ -1,3 +1,10 @@
+# v1.3.0
+## 01/09/2015
+
+1. [](#improved)
+    * NOTE: BREAKING CHANGE - Fixed references to plugins in `partials/` folder
+    * Updated README.md
+
 # v1.2.7
 ## 12/29/2014
 
