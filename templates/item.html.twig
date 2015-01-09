@@ -12,7 +12,9 @@
     {% endif  %}
 
 	{% block content %}
-		{% include 'breadcrumbs.html.twig' %}
+		{% if config.plugins.breadcrumbs.enabled %}
+			{% include 'partials/breadcrumbs.html.twig' %}
+		{% endif %}
 		
 		<div class="blog-content-item grid pure-g-r">
 			<div id="item" class="block pure-u-2-3">
