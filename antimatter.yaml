@@ -3,7 +3,7 @@ dropdown:
   enabled: false
 
 streams:
-  scheme:
+  schemes:
     theme:
       type: ReadOnlyStream
       paths:
