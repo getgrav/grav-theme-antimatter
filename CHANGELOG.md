@@ -1,3 +1,11 @@
+# v1.3.1
+## 01/23/2015
+
+1. [](#bugfix)
+    * Added page title encoding
+    * Stop modular pages showing up in dropdown menus
+    * Fixed typo in streams setup
+
 # v1.3.0
 ## 01/09/2015
 
