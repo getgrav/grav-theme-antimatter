@@ -444,7 +444,8 @@ form input {
   font-weight: 400; }
 
 table {
-  border: 1px solid #eaeaea; }
+  border: 1px solid #eaeaea;
+  table-layout: auto; }
 
 th {
   background: #f7f7f7;
