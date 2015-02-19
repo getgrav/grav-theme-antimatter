@@ -1,7 +1,16 @@
+# v1.3.3
+## 02/19/2015
+
+1. [](#improved)
+    * Implemented new `param_sep` variable from Grav 0.9.18
+1. [](#bugfix)
+    * Fix for table column widths
+    * Force snipcart slider to look in all pages
+
 # v1.3.2
 ## 02/05/2015
 
-2. [](#improved)
+1. [](#improved)
     * Minor typo in assets
 
 # v1.3.1
