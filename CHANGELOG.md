@@ -1,3 +1,9 @@
+# v1.3.4
+## 03/01/2015
+
+1. [](#improved)
+    * Use new Grav builtin 'jQuery' support
+
 # v1.3.3
 ## 02/19/2015
 
