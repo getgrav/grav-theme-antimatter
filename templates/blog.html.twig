@@ -27,7 +27,7 @@
 				{% include 'partials/breadcrumbs.html.twig' %}
 			{% endif %}
 
-		<div class="content-wrapper blog-content-list grid pure-g-r">
+		<div class="content-wrapper blog-content-list grid pure-g">
 			<div id="listing" class="block pure-u-2-3">
 				{% for child in collection %}
 			        {% include 'partials/blog_item.html.twig' with {'page':child, 'truncate':true} %}

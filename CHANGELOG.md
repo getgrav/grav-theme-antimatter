@@ -1,3 +1,12 @@
+# v1.3.5
+## 03/24/2015
+
+1. [](#improved)
+    * Keep html,body on height:100%; use body for scroll event
+    * Use Footer colors from vars rather than hard-coded
+1. [](#bugfix)
+    * Load pure grids at all times for better non-flexbox support
+
 # v1.3.4
 ## 03/01/2015
 

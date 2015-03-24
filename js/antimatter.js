@@ -9,29 +9,28 @@ function scrollHeader() {
         $("#header").removeClass("scrolled");
 }
 
-// ON SCROLL EVENTS
-if (!isTouch){
-    jQuery(document).scroll(function() {
-        scrollHeader();
-    });
-};
-
-// TOUCH SCROLL
-jQuery(document).on({
-    'touchmove': function(e) {
-        scrollHeader(); // Replace this with your code.
-    }
-});
-
-
 jQuery(document).ready(function($){
 
-	//Smooth scroll to top
-	$('#toTop').click(function(){
-		$("html, body").animate({ scrollTop: 0 }, 500);
-		return false;
-	});
-	// Responsive Menu
+    // ON SCROLL EVENTS
+    if (!isTouch){
+        $("body").scroll(function() {
+            scrollHeader();
+        });
+    };
+
+    // TOUCH SCROLL
+    $("body").on({
+        'touchmove': function(e) {
+            scrollHeader(); // Replace this with your code.
+        }
+    });
+
+    //Smooth scroll to top
+    $('#toTop').click(function(){
+        $("html, body").animate({ scrollTop: 0 }, 500);
+        return false;
+    });
+    // Responsive Menu
 
 });
 
