@@ -256,7 +256,7 @@ b, strong, label, th {
     #footer p .fa {
       color: #fff; }
 
-body {
+html, body, button, input, select, textarea, .pure-g [class*="pure-u"] {
   font-family: "Raleway", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
   font-weight: 400; }
 
