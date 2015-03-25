@@ -1,3 +1,9 @@
+# v1.3.6
+## 03/24/2015
+
+1. [](#bugfix)
+    * Fix for compressed text in `.pure-g` divs
+
 # v1.3.5
 ## 03/24/2015
 
