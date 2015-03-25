@@ -2,7 +2,7 @@ var isTouch = window.DocumentTouch && document instanceof DocumentTouch;
 
 function scrollHeader() {
     // Has scrolled class on header
-    var zvalue = $(this).scrollTop();
+    var zvalue = $("body").scrollTop();
     if ( zvalue > 75 )
         $("#header").addClass("scrolled");
     else
