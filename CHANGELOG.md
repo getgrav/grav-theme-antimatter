@@ -1,3 +1,9 @@
+# v1.3.7
+## 03/28/2015
+
+1. [](#bugfix)
+    * Rolled back changes that resulted in broken header
+
 # v1.3.6
 ## 03/24/2015
 
