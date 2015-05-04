@@ -13,5 +13,15 @@ bugs: https://github.com/getgrav/grav-theme-antimatter/issues
 license: MIT
 
 form:
-  validation: strict
+  validation: loose
   fields:
+    dropdown.enabled:
+        type: toggle
+        label: Dropdown in navbar
+        highlight: 1
+        default: 1
+        options:
+          1: Enabled
+          0: Disabled
+        validate:
+          type: bool
