@@ -21,14 +21,12 @@ form:
               default: blog
 
             header.taxonomy.tag:
-              type: checkboxes
+              type: text
               label: Tags
-              options:
-                demo: demo
-                grav: grav
-                matias: matias
-                apple: apple
-                sample: sample
+              size: large
+              classes: fancy
+              validate:
+                  type: commalist
 
             header.username:
               type: text
