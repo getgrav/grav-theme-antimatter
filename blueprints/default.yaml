@@ -18,43 +18,59 @@ form:
       active: 1
 
       fields:
+        basic:
+          type: tab
+          title: Basic
+
+          fields:
+            columns:
+                type: columns
+                fields:
+                  column1:
+                    type: column
+
+                    fields:
+
+                      header.title:
+                        type: text
+                        label: Title
+                        validate:
+                          required: true
+
+                      folder:
+                        type: text
+                        label: Folder Name
+                        validate:
+                          type: slug
+
+                      route:
+                        type: select
+                        label: Parent
+                        classes: fancy
+                        @data-options: '\Grav\Common\Page\Pages::parents'
+                        @data-default: '\Grav\Plugin\admin::route'
+                        options:
+                          '/': '- Root -'
+
+                      type:
+                        type: select
+                        classes: fancy
+                        label: Display Template
+                        default: default
+                        @data-options: '\Grav\Common\Page\Pages::types'
+
+                  column2:
+                      type: column
+
+                      fields:
+                        order:
+                          type: order
+                          label: Ordering
         content:
           type: tab
           title: Content
 
           fields:
-            route:
-              type: select
-              label: Parent
-              @data-options: '\Grav\Common\Page\Pages::parents'
-              @data-default: '\Grav\Plugin\admin::route'
-              options:
-                '': '- Root -'
-
-            order:
-              type: text
-              label: Ordering
-              validate:
-                type: int
-                min: 0
-
-            folder:
-              type: text
-              label: Folder
-              validate:
-                type: slug
-#                required: true
-
-            header.title:
-              type: text
-              label: Title
-              validate:
-                required: true
-
-            content:
-              type: textarea
-              label: Content
-
             header.process:
               type: checkboxes
               label: Process
@@ -64,6 +80,15 @@ form:
                 twig: Twig
               use: keys
 
+            content:
+                type: markdown
+                label: Content
+                validate:
+                  type: textarea
+
+            uploads:
+              type: uploads
+              label: Page Media
 
         meta:
           type: tab
@@ -141,17 +166,3 @@ form:
               type: hidden
               validate:
                 type: commalist
-
-        media:
-          type: tab
-          title: Media
-
-          fields:
-            files:
-              type: spacer
-              title: Files
-
-            media:
-              type: list
-              add: Add file
-              @import: 'medium/file'
