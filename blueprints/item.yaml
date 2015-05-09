@@ -1,38 +1,4 @@
 title: Item
-@extends: default
-
-form:
-  fields:
-    tabs:
-
-      fields:
-        blog:
-          type: tab
-          title: Blog Item
-
-          fields:
-            header.date:
-              type: datetime
-              label: Date
-
-            header.taxonomy.category:
-              type: text
-              label: Category
-              default: blog
-
-            header.taxonomy.tag:
-              type: text
-              label: Tags
-              size: large
-              classes: fancy
-              validate:
-                  type: commalist
-
-            header.username:
-              type: text
-              label: Author
-
-            header.blog_url:
-              type: text
-              label: Blog URL
-              default:
+@extends:
+    context: blueprints://
+    type: pages/item
