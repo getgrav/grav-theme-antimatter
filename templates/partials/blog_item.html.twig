@@ -42,7 +42,11 @@
         <p>{{ page.summary }}</p>
         <p><a href="{{ page.url }}">Continue Reading...</a></p>
     {% elseif truncate %}
-        <p>{{ page.content|truncate(550) }}</p>
+        {% if page.summary != page.content %}
+            <p>{{ page.content|truncate(550) }}</p>
+        {% else %}
+            <p>{{ page.content }}</p>
+        {% endif %}
         <p><a href="{{ page.url }}">Continue Reading...</a></p>
     {% else %}
         <p>{{ page.content }}</p>
