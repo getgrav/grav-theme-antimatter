@@ -1,4 +1,4 @@
-title: Features
+title: Showcase
 @extends: default
 
 form:
@@ -12,5 +12,5 @@ form:
                 column1:
                   fields:
                     type:
-                      default: features
+                      default: showcase
                       @data-options: '\Grav\Common\Page\Pages::modularTypes'
