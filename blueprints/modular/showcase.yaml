@@ -5,6 +5,10 @@ form:
   fields:
     tabs:
       fields:
+        content:
+          fields:
+            uploads:
+              label: Page Media (first one will be used as background)
         advanced:
           fields:
             columns:
