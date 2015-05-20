@@ -1,5 +1,0 @@
-title: Default
-@extends:
-    context: blueprints://
-    type: pages/default
-

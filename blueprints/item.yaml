@@ -1,4 +1,0 @@
-title: Item
-@extends:
-    context: blueprints://
-    type: pages/item
