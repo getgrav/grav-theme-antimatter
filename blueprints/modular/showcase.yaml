@@ -12,5 +12,5 @@ form:
                 column1:
                   fields:
                     type:
-                      default: showcase
+                      default: modular/showcase
                       @data-options: '\Grav\Common\Page\Pages::modularTypes'
