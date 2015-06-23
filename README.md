@@ -45,7 +45,7 @@ This command will check your Grav install to see if your Antimatter theme is due
 Manually updating Antimatter is pretty simple. Here is what you will need to do to get this done:
 
 * Delete the `your/site/user/themes/antimatter` directory.
-* Downalod the new version of the Antimatter theme from either [GitHub](https://github.com/getgrav/grav-plugin-antimatter) or [GetGrav.org](http://getgrav.org/downloads/themes#extras).
+* Download the new version of the Antimatter theme from either [GitHub](https://github.com/getgrav/grav-plugin-antimatter) or [GetGrav.org](http://getgrav.org/downloads/themes#extras).
 * Unzip the zip file in `your/site/user/themes` and rename the resulting folder to `antimatter`.
 * Clear the Grav cache. The simplest way to do this is by going to the root Grav directory in terminal and typing `bin/grav clear-cache`.
 
