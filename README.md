@@ -57,7 +57,7 @@ Manually updating Antimatter is pretty simple. Here is what you will need to do 
 * Fully responsive with off-page mobile navigation
 * SCSS based CSS source files for easy customization
 * Built-in support for on-page navigation
-* Mutliple page template types
+* Multiple page template types
 * Fontawesome icon support
 
 ### Supported Page Templates
