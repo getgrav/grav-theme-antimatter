@@ -2,12 +2,14 @@
 <html lang="en">
 <head>
 {% set theme_config = attribute(config.themes, config.system.pages.theme) %}
+
 {% block head %}
     <meta charset="utf-8" />
     <title>{% if header.title %}{{ header.title|e('html') }} | {% endif %}{{ site.title|e('html') }}</title>
     {% include 'partials/metadata.html.twig' %}
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="icon" type="image/png" href="{{ url('theme://images/favicon.png') }}" />
+    <link rel="canonical" href="{{ page.url(true, true) }}" />
 
     {% block stylesheets %}
         {% do assets.addCss('theme://css/pure-0.5.0/grids-min.css', 103) %}
