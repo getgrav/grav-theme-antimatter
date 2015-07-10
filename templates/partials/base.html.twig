@@ -43,18 +43,16 @@
     <div id="sb-site">
         {% block header %}
         <header id="header">
-
-                <div id="logo">
-                    <h3><a href="{{ base_url == '' ? '/' : base_url }}">{{ config.site.title }}</a></h3>
-                </div>
-                <div id="navbar">
-                    {% block header_extra %}{% endblock %}
-                    {% block header_navigation %}
-                    {% include 'partials/navigation.html.twig' %}
-                    {% endblock %}
-                    <span class="panel-activation sb-toggle-left navbar-left menu-btn fa fa-bars"></span>
-                </div>
-
+            <div id="logo">
+                <h3><a href="{{ base_url == '' ? '/' : base_url }}">{{ config.site.title }}</a></h3>
+            </div>
+            <div id="navbar">
+                {% block header_extra %}{% endblock %}
+                {% block header_navigation %}
+                {% include 'partials/navigation.html.twig' %}
+                {% endblock %}
+                <span class="panel-activation sb-toggle-left navbar-left menu-btn fa fa-bars"></span>
+            </div>
         </header>
         {% endblock %}
 
