@@ -1,8 +1,18 @@
+# v1.5.0
+## 07/14/2015
+
+1. [](#new)
+    * Added canonical URL support
+1. [](#improved)
+    * More improvements for blueprints
+1. [](#bugfix)
+    * Fixes for multi-language support
+
 # v1.4.0
 ## 05/09/2015
 
 1. [](#improved)
-    * Improved bluerpints
+    * Improved blueprints
 1. [](#bugfix)
     * Fix for when page.summary is equal to page.content
 
