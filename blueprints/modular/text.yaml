@@ -1,0 +1,29 @@
+title: Showcase
+@extends: default
+
+form:
+  fields:
+    tabs:
+      fields:
+        content:
+          fields:
+            uploads:
+              label: Page Media (first one will be displayed next to your content)
+            header.image_align:
+              type: select
+              label: Image position
+              classes: fancy
+              default: left
+              options:
+                'left': 'Left'
+                'right': 'Right'
+              type:
+        advanced:
+          fields:
+            columns:
+              fields:
+                column1:
+                  fields:
+                    type:
+                      default: modular/text
+                      @data-options: '\Grav\Common\Page\Pages::modularTypes'

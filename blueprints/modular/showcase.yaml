@@ -1,0 +1,20 @@
+title: Showcase
+@extends: default
+
+form:
+  fields:
+    tabs:
+      fields:
+        content:
+          fields:
+            uploads:
+              label: Page Media (first one will be used as background)
+        advanced:
+          fields:
+            columns:
+              fields:
+                column1:
+                  fields:
+                    type:
+                      default: modular/showcase
+                      @data-options: '\Grav\Common\Page\Pages::modularTypes'

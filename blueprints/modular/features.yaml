@@ -4,4 +4,32 @@ title: Features
 form:
   fields:
     tabs:
-      type: tabs
+      fields:
+        advanced:
+          fields:
+            columns:
+              fields:
+                column1:
+                  fields:
+                    type:
+                      default: modular/features
+                      @data-options: '\Grav\Common\Page\Pages::modularTypes'
+        features:
+          type: tab
+          title: Features
+          fields:
+            header.features:
+              name: features
+              type: list
+              label: Features
+
+              fields:
+                .icon:
+                  type: text
+                  label: Icon
+                .header:
+                  type: text
+                  label: Header
+                .text:
+                  type: text
+                  label: Text

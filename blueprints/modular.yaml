@@ -1,4 +1,0 @@
-title: Modular
-@extends:
-    context: blueprints://
-    type: pages/modular
