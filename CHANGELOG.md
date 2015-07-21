@@ -1,3 +1,11 @@
+# v1.6.0
+## 07/21/2015
+
+1. [](#new)
+    * Added support for `langswitcher` plugin
+1. [](#improved)
+    * Made sidebar links more robust
+
 # v1.5.0
 ## 07/14/2015
 

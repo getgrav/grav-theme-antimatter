@@ -1,3 +1,9 @@
+{% if blog.url == base_url_relative %}
+    {% set feed_url = blog.url~'/'~blog.slug %}
+{% else %}
+    {% set feed_url = blog.url %}
+{% endif  %}
+
 {% if config.plugins.simplesearch.enabled %}
 <div class="sidebar-content">
     <h4>SimpleSearch</h4>
@@ -21,13 +27,13 @@
 {% if config.plugins.taxonomylist.enabled %}
 <div class="sidebar-content">
     <h4>Popular Tags</h4>
-    {% include 'partials/taxonomylist.html.twig' with {'taxonomy':'tag'} %}
+    {% include 'partials/taxonomylist.html.twig' with {'base_url':blog.url, 'taxonomy':'tag'} %}
 </div>
 {% endif %}
 {% if config.plugins.archives.enabled %}
 <div class="sidebar-content">
     <h4>Archives</h4>
-	{% include 'partials/archives.html.twig' %}
+	{% include 'partials/archives.html.twig' with {'base_url':blog.url} %}
 </div>
 {% endif %}
 {% if config.plugins.feed.enabled %}
