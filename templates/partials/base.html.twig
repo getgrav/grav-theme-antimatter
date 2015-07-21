@@ -48,6 +48,9 @@
             </div>
             <div id="navbar">
                 {% block header_extra %}{% endblock %}
+                {% if config.plugins.langswitcher.enabled %}
+                {% include 'partials/langswitcher.html.twig' %}
+                {% endif %}
                 {% block header_navigation %}
                 {% include 'partials/navigation.html.twig' %}
                 {% endblock %}
