@@ -1,16 +1,6 @@
 {% embed 'partials/base.html.twig' %}
 
 	{% set collection = page.collection() %}
-	{% set base_url = page.url %}
-    {% set feed_url = base_url %}
-
-    {% if base_url == '/' %}
-        {% set base_url = '' %}
-    {% endif %}
-
-    {% if base_url == base_url_relative %}
-        {% set feed_url = base_url~'/'~page.slug %}
-    {% endif  %}
 
 	{% block content %}
 		{% set blog_image = page.media.images|first.grayscale().contrast(20).brightness(-100).colorize(-35,81,122) %}
@@ -30,15 +20,15 @@
 		<div class="content-wrapper blog-content-list grid pure-g">
 			<div id="listing" class="block pure-u-2-3">
 				{% for child in collection %}
-			        {% include 'partials/blog_item.html.twig' with {'page':child, 'truncate':true} %}
+			        {% include 'partials/blog_item.html.twig' with {'blog':page, 'page':child, 'truncate':true} %}
 			    {% endfor %}
 
                 {% if config.plugins.pagination.enabled and collection.params.pagination %}
-                    {% include 'partials/pagination.html.twig' with {'pagination':collection.params.pagination} %}
+                    {% include 'partials/pagination.html.twig' with {'base_url':page.url, 'pagination':collection.params.pagination} %}
                 {% endif %}
 			</div>
 			<div id="sidebar" class="block size-1-3 pure-u-1-3">
-				{% include 'partials/sidebar.html.twig' %}
+				{% include 'partials/sidebar.html.twig' with {'blog':page} %}
 			</div>
 		</div>
 	{% endblock %}

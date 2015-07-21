@@ -19,7 +19,7 @@
         {% if page.taxonomy.tag %}
         <span class="tags">
             {% for tag in page.taxonomy.tag %}
-            <a href="{{ base_url }}/tag{{ config.system.param_sep }}{{ tag }}">{{ tag }}</a>
+            <a href="{{ blog.url }}/tag{{ config.system.param_sep }}{{ tag }}">{{ tag }}</a>
             {% endfor %}
         </span>
         {% endif %}
