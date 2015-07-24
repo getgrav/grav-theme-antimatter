@@ -1,3 +1,9 @@
+# v1.6.1
+## 07/24/2015
+
+1. [](#bugfix)
+    * Fixed sidebar links when site at root
+
 # v1.6.0
 ## 07/21/2015
 
