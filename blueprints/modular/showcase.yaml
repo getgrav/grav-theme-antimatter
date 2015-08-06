@@ -5,10 +5,6 @@ form:
   fields:
     tabs:
       fields:
-        content:
-          fields:
-            uploads:
-              label: Page Media (first one will be used as background)
         advanced:
           fields:
             columns:
@@ -18,3 +14,27 @@ form:
                     type:
                       default: modular/showcase
                       @data-options: '\Grav\Common\Page\Pages::modularTypes'
+        buttons:
+          type: tab
+          title: Buttons
+          fields:
+            header.buttons:
+              name: buttons
+              type: list
+              label: Buttons
+              fields:
+                .text:
+                  type: text
+                  label: Text
+                .url:
+                  type: text
+                  label: URL
+                .primary:
+                  type: toggle
+                  label: Primary
+                  highlight: 1
+                  options:
+                      1: Yes
+                      0: No
+                  validate:
+                      type: bool

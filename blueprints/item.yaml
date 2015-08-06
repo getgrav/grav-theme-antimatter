@@ -1,0 +1,55 @@
+title: Item
+@extends:
+    type: default
+    context: blueprints://pages
+
+form:
+  fields:
+    tabs:
+
+      fields:
+        blog:
+          type: tab
+          title: Blog Item
+
+          fields:
+            summary:
+              type: section
+              title: Summary
+              underline: true
+
+
+            header.summary.enabled:
+              type: toggle
+              label: Summary
+              highlight: 1
+              options:
+                '': Global
+                1: Enabled
+                0: Disabled
+
+            header.summary.format:
+              type: select
+              toggleable: true
+              label: Format
+              classes: fancy
+              options:
+                'short': 'Use the first occurence of delimter or size'
+                'long': 'Summary delimiter will be ignored'
+
+            header.summary.size:
+              type: text
+              toggleable: true
+              label: Size
+              classes: large
+              placeholder: 300
+              validate:
+                type: int
+                min: 1
+
+            header.summary.delimiter:
+              type: text
+              toggleable: true
+              label: Summary delimiter
+              classes: large
+              placeholder: ===
