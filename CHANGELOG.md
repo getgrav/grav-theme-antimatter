@@ -1,3 +1,11 @@
+# v1.7.0
+## 08/06/2015
+
+1. [](#new)
+    * Blueprints that work with new admin plugin!
+1. [](#bugfix)
+    * Favicon with full image URL   
+
 # v1.6.1
 ## 07/24/2015
 
