@@ -1,3 +1,9 @@
+# v1.7.1
+## 08/11/2015
+
+1. [](#improved)
+    * Use new toggle for item blueprint
+
 # v1.7.0
 ## 08/06/2015
 
