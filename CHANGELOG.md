@@ -1,3 +1,9 @@
+# v1.7.2
+## 08/24/2015
+
+1. [](#new)
+    * Added support for `login-status` partial in menu
+
 # v1.7.1
 ## 08/11/2015
 
