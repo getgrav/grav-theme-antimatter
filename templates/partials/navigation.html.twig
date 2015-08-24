@@ -37,5 +37,8 @@
             </a>
         </li>
     {% endfor %}
-</ul>           
+    {% if config.plugins.login.enabled and grav.user.username %}
+        <li><i class="fa fa-lock"></i> {% include 'partials/login-status.html.twig' %}</li>
+    {% endif %}
+</ul>
 
