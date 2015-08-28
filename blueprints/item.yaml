@@ -40,7 +40,7 @@ form:
               type: text
               toggleable: true
               label: Image Width
-              size: x-small
+              size: small
               help: Header width in px
               placeholder: Default is 900
               validate:
@@ -52,7 +52,7 @@ form:
               type: text
               toggleable: true
               label: Image Height
-              size: x-small
+              size: small
               help: Header height in px
               placeholder: Default is 300
               validate:
