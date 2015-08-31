@@ -1,3 +1,11 @@
+# v1.7.3
+## 08/31/2015
+
+1. [](#new)
+    * Added header image control and blueprints to admin plugin
+1. [](#improved)
+    * Use new template field for modular pages
+
 # v1.7.2
 ## 08/24/2015
 
