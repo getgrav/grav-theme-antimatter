@@ -65,7 +65,7 @@ Manually updating Antimatter is pretty simple. Here is what you will need to do 
 * Default view template
 * Blog view template
 * Error view template
-* Blog item vew template
+* Blog item view template
 * Modular view templates:
   * Features Modular view template
   * Showcase Modular view template
