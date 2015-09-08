@@ -15,6 +15,14 @@
     {% endfor %}
 {% endmacro %}
 
+{% macro getLanguageProperty(property, settings) %}
+    {% if property is iterable %}
+        {{ attribute(property, settings.getActive) is defined ? attribute(property, settings.getActive) : attribute(property, settings.default) }}
+    {% else %}
+        {{ property }}
+    {% endif %}
+{% endmacro %}
+
 <ul class="navigation">
     {% if theme_config.dropdown.enabled %}
         {{ _self.loop(pages) }}
@@ -31,9 +39,9 @@
     {% endif %}
     {% for mitem in site.menu %}
         <li>
-            <a href="{{ mitem.url[grav.language.getActive]|default(mitem.url) }}">
+            <a href="{{ _self.getLanguageProperty(mitem.url, grav.language) }}">
                 {% if mitem.icon %}<i class="fa fa-{{ mitem.icon }}"></i>{% endif %}
-                {{ mitem.text[grav.language.getActive]|default(mitem.text) }}
+                {{ _self.getLanguageProperty(mitem.text, grav.language) }}
             </a>
         </li>
     {% endfor %}
