@@ -6,7 +6,7 @@ Antimatter is the default [Grav](http://getgrav.org) theme. Simple, fast and mod
 
 # Installation
 
-Installing the Antimatter theme can be done in one of two ways. Our GPM (Grav Package Manager) installation method enables you to quickly and easily install the theme with a simple terminal command, while the manual method enables you to do so via a zip file. 
+Installing the Antimatter theme can be done in one of two ways. Our GPM (Grav Package Manager) installation method enables you to quickly and easily install the theme with a simple terminal command, while the manual method enables you to do so via a zip file.
 
 The theme by itself is useful, but you may have an easier time getting up and running by installing a skeleton. The Antimatter theme can be found in both the [One-page](https://github.com/getgrav/grav-skeleton-onepage-site) and [Blog Site](https://github.com/getgrav/grav-skeleton-blog-site) which are self-contained repositories for a complete sites which include: sample content, configuration, theme, and plugins.
 
@@ -112,6 +112,24 @@ menu:
 ```
 
 The `url:` option is required, but you can provide **either** or **both** `text:` and/or `icon:`
+
+You can add multiple language support by adding a map with language prefixes (eg. `en`, `de`) to the menu items. You even can specify addresses based on the current language:
+
+```
+menu:
+    - text:
+        en: Source
+        de: Quellcode
+      url: https://github.com/getgrav/grav
+    - icon:
+        en: Contact
+        de: Kontakt
+      url:
+        en: /en/contact
+        de: /de/kontakt
+    - icon: twitter
+      url: http://twitter.com/getgrav
+```
 
 ### Blog Features
 

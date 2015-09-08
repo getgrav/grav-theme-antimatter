@@ -31,9 +31,9 @@
     {% endif %}
     {% for mitem in site.menu %}
         <li>
-            <a href="{{ mitem.url }}">
+            <a href="{{ mitem.url[grav.language.getActive]|default(mitem.url) }}">
                 {% if mitem.icon %}<i class="fa fa-{{ mitem.icon }}"></i>{% endif %}
-                {{ mitem.text }}
+                {{ mitem.text[grav.language.getActive]|default(mitem.text) }}
             </a>
         </li>
     {% endfor %}
