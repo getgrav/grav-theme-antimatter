@@ -121,7 +121,7 @@ menu:
         en: Source
         de: Quellcode
       url: https://github.com/getgrav/grav
-    - icon:
+    - text:
         en: Contact
         de: Kontakt
       url:
