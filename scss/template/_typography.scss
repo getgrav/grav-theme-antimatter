@@ -127,6 +127,12 @@ blockquote > blockquote > blockquote {
 		border-left: 10px solid $notes-info-border;
 		background: $notes-info-bg;
 		color: darken($notes-info-border,15%);
+		a {
+			color: darken($notes-info-border,25%);
+			&:hover {
+				color: lighten($notes-info-border,5%);
+			}
+		}
 	}
 
 	> blockquote > p {
@@ -135,6 +141,12 @@ blockquote > blockquote > blockquote {
 		border-left: 10px solid $notes-warning-border;
 		background: $notes-warning-bg;
 		color: darken($notes-warning-border,15%);
+		a {
+			color: darken($notes-warning-border,25%);
+			&:hover {
+				color: lighten($notes-warning-border,5%);
+			}
+		}
 	}
 
 	> blockquote > blockquote > p {
@@ -143,6 +155,12 @@ blockquote > blockquote > blockquote {
 		border-left: 10px solid $notes-note-border;
 		background: $notes-note-bg;
 		color: darken($notes-note-border,15%);
+		a {
+			color: darken($notes-note-border,25%);
+			&:hover {
+				color: lighten($notes-note-border,5%);
+			}
+		}
 	}
 
 	> blockquote > blockquote > blockquote > p {
@@ -151,6 +169,12 @@ blockquote > blockquote > blockquote {
 		border-left: 10px solid $notes-success-border;
 		background: $notes-success-bg;
 		color: darken($notes-success-border,15%);
+		a {
+			color: darken($notes-success-border,25%);
+			&:hover {
+				color: lighten($notes-success-border,5%);
+			}
+		}
 	}
 
 }
