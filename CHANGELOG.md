@@ -1,4 +1,12 @@
 # v1.7.3
+## 09/11/2015
+
+1. [](#new)
+    * Added SCSS configurable notes colors
+1. [](#improved)
+    * Various typos
+
+# v1.7.3
 ## 08/31/2015
 
 1. [](#new)
