@@ -124,33 +124,57 @@ blockquote > blockquote > blockquote {
 	> p {
 		// Yellow
 		margin-left: -71px;
-		border-left: 10px solid #F0AD4E;
-		background: #FCF8F2;
-		color: darken(#F0AD4E,15%);
+		border-left: 10px solid $notes-info-border;
+		background: $notes-info-bg;
+		color: darken($notes-info-border,15%);
+		a {
+			color: darken($notes-info-border,25%);
+			&:hover {
+				color: lighten($notes-info-border,5%);
+			}
+		}
 	}
 
 	> blockquote > p {
 		// Red
 		margin-left: -94px;
-		border-left: 10px solid #D9534F;
-		background: #FDF7F7;
-		color: darken(#D9534F,15%);
+		border-left: 10px solid $notes-warning-border;
+		background: $notes-warning-bg;
+		color: darken($notes-warning-border,15%);
+		a {
+			color: darken($notes-warning-border,25%);
+			&:hover {
+				color: lighten($notes-warning-border,5%);
+			}
+		}
 	}
 
 	> blockquote > blockquote > p {
 		// Blue
 		margin-left: -118px;
-		border-left: 10px solid #5BC0DE;
-		background: #F4F8FA;
-		color: darken(#5BC0DE,15%);
+		border-left: 10px solid $notes-note-border;
+		background: $notes-note-bg;
+		color: darken($notes-note-border,15%);
+		a {
+			color: darken($notes-note-border,25%);
+			&:hover {
+				color: lighten($notes-note-border,5%);
+			}
+		}
 	}
 
 	> blockquote > blockquote > blockquote > p {
 		// Green
 		margin-left: -142px;
-		border-left: 10px solid #5CB85C;
-		background: #F1F9F1;
-		color: darken(#5CB85C,15%);
+		border-left: 10px solid $notes-success-border;
+		background: $notes-success-bg;
+		color: darken($notes-success-border,15%);
+		a {
+			color: darken($notes-success-border,25%);
+			&:hover {
+				color: lighten($notes-success-border,5%);
+			}
+		}
 	}
 
 }

@@ -45,7 +45,7 @@ This command will check your Grav install to see if your Antimatter theme is due
 Manually updating Antimatter is pretty simple. Here is what you will need to do to get this done:
 
 * Delete the `your/site/user/themes/antimatter` directory.
-* Downalod the new version of the Antimatter theme from either [GitHub](https://github.com/getgrav/grav-plugin-antimatter) or [GetGrav.org](http://getgrav.org/downloads/themes#extras).
+* Download the new version of the Antimatter theme from either [GitHub](https://github.com/getgrav/grav-plugin-antimatter) or [GetGrav.org](http://getgrav.org/downloads/themes#extras).
 * Unzip the zip file in `your/site/user/themes` and rename the resulting folder to `antimatter`.
 * Clear the Grav cache. The simplest way to do this is by going to the root Grav directory in terminal and typing `bin/grav clear-cache`.
 
@@ -57,7 +57,7 @@ Manually updating Antimatter is pretty simple. Here is what you will need to do 
 * Fully responsive with off-page mobile navigation
 * SCSS based CSS source files for easy customization
 * Built-in support for on-page navigation
-* Mutliple page template types
+* Multiple page template types
 * Fontawesome icon support
 
 ### Supported Page Templates
@@ -65,7 +65,7 @@ Manually updating Antimatter is pretty simple. Here is what you will need to do 
 * Default view template
 * Blog view template
 * Error view template
-* Blog item vew template
+* Blog item view template
 * Modular view templates:
   * Features Modular view template
   * Showcase Modular view template
