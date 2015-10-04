@@ -30,12 +30,18 @@
     {% if show_onpage_menu %}
         <ul class="navigation">
         {% for module in page.collection() %}
-
             {% set current_module = (module.active or module.activeChild) ? 'active' : '' %}
             <li class="{{ current_module }}"><a href="#{{ _self.pageLinkName(module.menu) }}">{{ module.menu }}</a></li>
-
         {% endfor %}
-    </ul>
+        {% for mitem in site.menu %}
+            <li>
+                <a href="{{ mitem.url }}">
+                    {% if mitem.icon %}<i class="fa fa-{{ mitem.icon }}"></i>{% endif %}
+                    {{ mitem.text }}
+                </a>
+            </li>
+        {% endfor %}
+        </ul>
     {% else %}
         {{  parent() }}
     {% endif %}
