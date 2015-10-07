@@ -1,3 +1,11 @@
+# v1.7.6
+## 10/07/2015
+
+1. [](#new)
+    * Added logic to include site.menu items in modular pages
+1. [](#improved)
+    * Removed unused `<p>` tags
+
 # v1.7.5
 ## 09/16/2015
 
