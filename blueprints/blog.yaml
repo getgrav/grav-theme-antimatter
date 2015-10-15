@@ -1,5 +1,5 @@
 title: Blog
-@extends:
+'@extends':
     type: default
     context: blueprints://pages
 
@@ -35,9 +35,9 @@ form:
             header.content.items:
               type: select
               label: Items
-              default: @self.children
+              default: '@self.children'
               options:
-                @self.children: Children
+                '@self.children': Children
 
             header.content.limit:
               type: text
