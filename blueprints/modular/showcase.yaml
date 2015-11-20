@@ -38,8 +38,9 @@ form:
                   type: toggle
                   label: Primary
                   highlight: 1
+                  default: 1
                   options:
-                      1: Yes
-                      0: No
+                      1: 'Yes'
+                      0: 'No'
                   validate:
                       type: bool
