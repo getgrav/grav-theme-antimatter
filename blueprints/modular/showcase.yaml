@@ -1,5 +1,5 @@
 title: Showcase
-@extends: default
+'@extends': default
 
 form:
   fields:
@@ -13,12 +13,12 @@ form:
                   fields:
                     name:
                       default: modular/showcase
-                      @data-options: '\Grav\Common\Page\Pages::modularTypes'
+                      '@data-options': '\Grav\Common\Page\Pages::modularTypes'
             overrides:
               fields:
                 header.template:
                   default: modular/showcase
-                  @data-options: '\Grav\Common\Page\Pages::modularTypes'
+                  '@data-options': '\Grav\Common\Page\Pages::modularTypes'
         buttons:
           type: tab
           title: Buttons
@@ -38,8 +38,9 @@ form:
                   type: toggle
                   label: Primary
                   highlight: 1
+                  default: 1
                   options:
-                      1: Yes
-                      0: No
+                      1: 'Yes'
+                      0: 'No'
                   validate:
                       type: bool

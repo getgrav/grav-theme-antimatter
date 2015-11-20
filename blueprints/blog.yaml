@@ -1,5 +1,5 @@
 title: Blog
-@extends:
+'@extends':
     type: default
     context: blueprints://pages
 
@@ -33,11 +33,10 @@ form:
 
           fields:
             header.content.items:
-              type: select
+              type: textarea
+              yaml: true
               label: Items
-              default: @self.children
-              options:
-                @self.children: Children
+              default: '@self.children'
 
             header.content.limit:
               type: text
@@ -74,3 +73,17 @@ form:
               options:
                 1: Enabled
                 0: Disabled
+              validate:
+                type: bool
+
+
+            header.content.url_taxonomy_filters:
+              type: toggle
+              label: URL Taxonomy Filters
+              highlight: 1
+              default: 1
+              options:
+                1: Enabled
+                0: Disabled
+              validate:
+                type: bool

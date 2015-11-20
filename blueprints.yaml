@@ -1,5 +1,5 @@
 name: Antimatter
-version: 1.7.6
+version: 1.8.0
 description: "Antimatter is the default theme included with **Grav**"
 icon: empire
 author:
@@ -15,6 +15,14 @@ license: MIT
 form:
   validation: loose
   fields:
+    default_lang:
+      type: text
+      size: x-small
+      label: Default lang
+      default: 'en'
+      validate:
+        type: text
+
     dropdown.enabled:
         type: toggle
         label: Dropdown in navbar

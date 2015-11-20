@@ -1,3 +1,17 @@
+# v1.8.0
+## 11/20/2015
+
+1. [](#new)
+    * Added logic to include site.menu items in modular pages
+    * Added a configurable lang field for HTML tag
+    * Added a `bottom` JS output call
+1. [](#improved)
+    * Updated to FontAwesome 4.4.0
+1. [](#bugfix)
+    * Fixed extra `/` in some tag URLs
+    * Better support for PECL Yaml parser
+    * Fixes for blog page blueprint
+
 # v1.7.6
 ## 10/07/2015
 

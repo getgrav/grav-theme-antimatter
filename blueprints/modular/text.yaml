@@ -1,5 +1,5 @@
 title: Text
-@extends: default
+'@extends': default
 
 form:
   fields:
@@ -13,12 +13,12 @@ form:
                   fields:
                     name:
                       default: modular/text
-                      @data-options: '\Grav\Common\Page\Pages::modularTypes'
+                      '@data-options': '\Grav\Common\Page\Pages::modularTypes'
             overrides:
               fields:
                 header.template:
                   default: modular/text
-                  @data-options: '\Grav\Common\Page\Pages::modularTypes'
+                  '@data-options': '\Grav\Common\Page\Pages::modularTypes'
         content:
           fields:
             uploads:
