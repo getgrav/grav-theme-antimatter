@@ -58,6 +58,11 @@
         <p><a href="{{ page.url }}">Continue Reading...</a></p>
     {% else %}
         {{ page.content }}
+
+        {% if config.plugins.comments.enabled %}
+            {% include 'partials/comments.html.twig' %}
+        {% endif %}
+
         {% set show_prev_next = true %}
     {% endif %}
 
