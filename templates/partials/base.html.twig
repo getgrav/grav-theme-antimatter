@@ -13,10 +13,10 @@
 
     {% block stylesheets %}
         {% do assets.addCss('theme://css/pure-0.5.0/grids-min.css', 103) %}
-        {% do assets.addCss('theme://css-compiled/nucleus.css',102) %}
-        {% do assets.addCss('theme://css-compiled/template.css',101) %}
-        {% do assets.addCss('theme://css/custom.css',100) %}
-        {% do assets.addCss('theme://css/font-awesome.min.css',100) %}
+        {% do assets.addCss('theme://css-compiled/nucleus.css', 102) %}
+        {% do assets.addCss('theme://css-compiled/template.css', 101) %}
+        {% do assets.addCss('theme://css/custom.css', 100) %}
+        {% do assets.addCss('theme://css/font-awesome.min.css', 100) %}
         {% do assets.addCss('theme://css/slidebars.min.css') %}
 
         {% if browser.getBrowser == 'msie' and browser.getVersion == 10 %}
@@ -30,8 +30,8 @@
     {{ assets.css() }}
 
     {% block javascripts %}
-        {% do assets.addJs('jquery',101) %}
-        {% do assets.addJs('theme://js/modernizr.custom.71422.js',100) %}
+        {% do assets.addJs('jquery', 101) %}
+        {% do assets.addJs('theme://js/modernizr.custom.71422.js', 100) %}
         {% do assets.addJs('theme://js/antimatter.js') %}
         {% do assets.addJs('theme://js/slidebars.min.js') %}
     {% endblock %}
