@@ -15,14 +15,6 @@ license: MIT
 form:
   validation: loose
   fields:
-    default_lang:
-      type: text
-      size: x-small
-      label: Default lang
-      default: 'en'
-      validate:
-        type: text
-
     dropdown.enabled:
         type: toggle
         label: Dropdown in navbar
