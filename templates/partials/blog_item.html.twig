@@ -48,14 +48,14 @@
         {% endif %}
     {% elseif truncate and page.summary != page.content %}
         {{ page.summary }}
-        <p><a href="{{ page.url }}">Continue Reading...</a></p>
+        <p><a href="{{ page.url }}">{{ 'BLOG.ITEM.CONTINUE_READING'|t }}</a></p>
     {% elseif truncate %}
         {% if page.summary != page.content %}
             {{ page.content|truncate(550) }}
         {% else %}
             {{ page.content }}
         {% endif %}
-        <p><a href="{{ page.url }}">Continue Reading...</a></p>
+        <p><a href="{{ page.url }}">{{ 'BLOG.ITEM.CONTINUE_READING'|t }}</a></p>
     {% else %}
         {{ page.content }}
 
@@ -70,11 +70,11 @@
 
         <p class="prev-next">
             {% if not page.isFirst %}
-                <a class="button" href="{{ page.nextSibling.url }}"><i class="fa fa-chevron-left"></i> Next Post</a>
+                <a class="button" href="{{ page.nextSibling.url }}"><i class="fa fa-chevron-left"></i> {{ 'BLOG.ITEM.NEXT_POST'|t }}</a>
             {% endif %}
 
             {% if not page.isLast %}
-                <a class="button" href="{{ page.prevSibling.url }}">Previous Post <i class="fa fa-chevron-right"></i></a>
+                <a class="button" href="{{ page.prevSibling.url }}">{{ 'BLOG.ITEM.PREV_POST'|t }} <i class="fa fa-chevron-right"></i></a>
             {% endif %}
         </p>
     {% endif %}
