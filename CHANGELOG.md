@@ -1,3 +1,13 @@
+# v2.0.0
+## XX/XX/2016
+
+1. [](#new)
+    * New **dropdown** styling
+1. [](#improved)
+    * 
+1. [](#bugfix)
+    * 
+
 # v1.8.0
 ## 11/20/2015
 
