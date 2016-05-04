@@ -32,6 +32,17 @@
         }
     }
 
+    .search-wrapper {
+        .search-submit {
+            height: 52px;
+            padding: 0 10px;
+            img {
+                width: 30px;
+            }
+        }
+    }
+
+
     .search-details {
         float: right;
         margin-top: -2.5rem;
