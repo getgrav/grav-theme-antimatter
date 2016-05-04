@@ -163,6 +163,7 @@ $dropdown-color: #f6f6f6;
 						position: absolute;
 						background-color: $dropdown-color;
 						border: 1px solid darken($dropdown-color, 4%);
+						border-top: 0;
 						min-width: 12rem;
 						text-align: left;
 						z-index: 999;
@@ -187,6 +188,7 @@ $dropdown-color: #f6f6f6;
 
 						a {
 							display: block;
+							margin: 0 -1px;
 
 							&:after, &:before {
 								display: none;
@@ -197,7 +199,7 @@ $dropdown-color: #f6f6f6;
 					/* Dropdown CSS */
 					ul ul {
 						left: 100%;
-						top: -1px;
+						top: 0px;
 					}
 
 					/* Active on Hover */
@@ -260,6 +262,10 @@ $dropdown-color: #f6f6f6;
         background-color: rgba($header-text,0);
         box-shadow: none;
 
+		.navigation .has-children:hover a {
+			color: $core-accent;
+		}
+
         #logo h3, #logo a {
             color: $header-text;
         }
@@ -270,15 +276,5 @@ $dropdown-color: #f6f6f6;
         	background-color: rgba($header-text,0.7) !important;
         }
 
-        #navbar ul.navigation  {
-
-            ul li a {
-
-                color: $core-accent;
-                &:hover {
-                    color: darken($core-accent, 20%);
-                }
-            }
-        }
     }
 }
