@@ -8,7 +8,7 @@
     <div class="list-blog-header">
         <span class="list-blog-date">
             <span>{{ page.date|date("d") }}</span>
-            <em>{{ page.date|date("M") }}</em>
+            <em>{{ 'MONTHS_OF_THE_YEAR'|ta(page.date|date('M Y')|date('n') -1) }} {{ month|date('Y') }}</em>
         </span>
         {% if page.header.link %}
             <h4>
