@@ -1,12 +1,17 @@
 # v2.0.0
-## XX/XX/2016
+## 05/23/2016
 
 1. [](#new)
-    * New **dropdown** styling
+    * New and improved **dropdown** styling
 1. [](#improved)
-    * 
-1. [](#bugfix)
-    * 
+    * Removed templates from `form` + `snipcart` plugins
+    * Added support for search button
+    * Updated some translations
+    * Automatically add comments if configured
+    * Relative path for favicon
+    * Slightly modified the blockquote background color
+    * Removed unneeded streams from YAML
+    * Use common language strings in Blueprint
 
 # v1.8.0
 ## 11/20/2015
