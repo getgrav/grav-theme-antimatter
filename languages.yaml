@@ -22,7 +22,7 @@ en:
     SYNDICATE:
       HEADLINE: Syndicate
   FORM_DATA:
-    SUMMARY: Here is the summary of what you wrote to us:
+    SUMMARY: "Here is the summary of what you wrote to us:"
   ERROR: Error
 
 de:
@@ -49,7 +49,7 @@ de:
     SYNDICATE:
       HEADLINE: Abonnements
   FORM_DATA:
-    SUMMARY: Folgendes haben Sie uns mitgeteilt:
+    SUMMARY: "Folgendes haben Sie uns mitgeteilt:"
   ERROR: Fehler
   
 fr:
@@ -76,5 +76,32 @@ fr:
     SYNDICATE:
       HEADLINE: Syndication
   FORM_DATA:
-    SUMMARY: Voici le résumé de ce que vous avez écrit pour nous :
+    SUMMARY: "Voici le résumé de ce que vous avez écrit pour nous:"
   ERROR: Erreur
+
+it:
+  TRANSLATION_TEST: Antimatter!
+  BLOG:
+    ITEM:
+      CONTINUE_READING: Continua a leggere...
+      NEXT_POST: Prossimo articolo
+      PREV_POST: Articolo precedente
+  SIDEBAR:
+    SIMPLE_SEARCH:
+      HEADLINE: SimpleSearch
+    RELATED_POSTS:
+      HEADLINE: Articoli correlati
+    RANDOM_ARTICLE:
+      HEADLINE: Articolo a caso
+      FEELING_LUCKY: Mi sento fortunato!
+    SOME_TEXT_WIDGET:
+      HEADLINE: Widget di testo
+    POPULAR_TAGS:
+      HEADLINE: Tag popolari
+    ARCHIVES:
+      HEADLINE: Archivio
+    SYNDICATE:
+      HEADLINE: Feed
+  FORM_DATA:
+    SUMMARY: "Questo è il riassunto di quanto ci hai scritto:"
+  ERROR: Errore
