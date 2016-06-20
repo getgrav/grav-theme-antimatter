@@ -1,3 +1,9 @@
+# v2.0.0-beta.2
+## 06/xx/2016
+
+1. [](#improved)
+    * Updated to FontAwesome 4.6.3
+    
 # v2.0.0-beta.1
 ## 05/23/2016
 
