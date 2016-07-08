@@ -123,7 +123,7 @@ Antimatter supports the ability for a page to have a `link:` header option.  Thi
 link: http://getgrav.org/blog
 ```
 
-#### Multi-lingual dates for blog items
+##### Multi-lingual dates for blog items
 
 Antimatter supports translations for dates.
 
