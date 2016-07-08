@@ -9,7 +9,7 @@
         <span class="list-blog-date">
             <time class="dt-published" datetime="{{ page.date|date("c") }}">
                 <span>{{ page.date|date("d") }}</span>
-                <em>{{ page.date|date("M") }}</em>
+                <em>{{ 'MONTHS_OF_THE_YEAR'|ta(page.date|date('M Y')|date('n') -1) }} {{ month|date('Y') }}</em>
             </time>
         </span>
         {% if page.header.link %}
