@@ -1,8 +1,11 @@
 # v2.0.0-beta.2
 ## 06/xx/2016
 
+1. [](#new)
+    * Added microformats2 support [#64](https://github.com/getgrav/grav-theme-antimatter/pull/64)
 1. [](#improved)
     * Updated to FontAwesome 4.6.3
+    * Added romanian, russian and ukranian
     
 # v2.0.0-beta.1
 ## 05/23/2016
