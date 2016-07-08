@@ -19,6 +19,10 @@
 
 		<div class="content-wrapper blog-content-list grid pure-g">
 			<div id="listing" class="block pure-u-2-3 h-feed">
+				<div style="display: none">
+			        <a href="{{ page.url(true) }}" class="p-name u-url">{{ site.title ~ ' | ' ~ page.title }}</a>
+			        <p class="p-summary">{{ "BLOG.FEED.DESCRIPTION"|t(page.title|e) ~ ' @ ' ~ site.title }}</p>
+			    </div>
 				{% for child in collection %}
 			        {% include 'partials/blog_item.html.twig' with {'blog':page, 'page':child, 'truncate':true} %}
 			    {% endfor %}

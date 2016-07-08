@@ -1,3 +1,5 @@
 enabled: true
 dropdown:
   enabled: false
+date:
+  translate: false

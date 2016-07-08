@@ -1,6 +1,8 @@
 en:
   TRANSLATION_TEST: Antimatter!
   BLOG:
+    FEED:
+      DESCRIPTION: %s's latest articles.
     ITEM:
       CONTINUE_READING: Continue reading...
       NEXT_POST: Next Post
@@ -82,6 +84,8 @@ es:
 fr:
   TRANSLATION_TEST: Antimatter !
   BLOG:
+    FEED:
+      DESCRIPTION: Les derniers articles de %s.
     ITEM:
       CONTINUE_READING: Continuer la lecture...
       NEXT_POST: Article suivant
