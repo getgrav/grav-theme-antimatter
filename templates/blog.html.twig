@@ -19,6 +19,10 @@
 
 		<div class="content-wrapper blog-content-list grid pure-g">
 			<div id="listing" class="block pure-u-2-3 h-feed">
+				<div style="display: none">
+			        <a href="{{ page.slug }}" class="p-name u-url">{% if header.title %}{{ header.title|e('html') }} | {% endif %}{{ site.title|e('html') }}</a>
+			        <p class="p-summary">{{ site.title|e('html')}}'s latest articles.</p>
+			    </div>
 				{% for child in collection %}
 			        {% include 'partials/blog_item.html.twig' with {'blog':page, 'page':child, 'truncate':true} %}
 			    {% endfor %}
