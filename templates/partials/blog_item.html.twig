@@ -9,8 +9,12 @@
         <span class="list-blog-date">
             <time class="dt-published" datetime="{{ page.date|date("c") }}">
                 <span>{{ page.date|date("d") }}</span>
+                {% if theme_config.date.translate %}
                 <em>{{ 'MONTHS_OF_THE_YEAR'|ta(page.date|date('M Y')|date('n') -1) }} {{ month|date('Y') }}</em>
-            </time>
+                {% else %}
+                <em>{{ page.date|date("M") }}</em>
+                {% endif %}
+            </title>
         </span>
         {% if page.header.link %}
             <h4 class="p-name">
