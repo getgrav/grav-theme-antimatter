@@ -1,4 +1,12 @@
 # v2.0.0-beta.2
+## 07/08/2016
+
+1. [](#new)
+    * Added translation string for feed description
+    * Added translation of months in the date of blog-items (thanks to @JohnMica) with a config option to enable/disable
+1. [](#improved)
+    * Changed h-feed properties (name and description set properly)
+
 ## 06/xx/2016
 
 1. [](#new)

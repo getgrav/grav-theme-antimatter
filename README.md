@@ -123,6 +123,17 @@ Antimatter supports the ability for a page to have a `link:` header option.  Thi
 link: http://getgrav.org/blog
 ```
 
+#### Multi-lingual dates for blog items
+
+Antimatter supports translations for dates.
+
+You can enable this in your `user/config/themes/antimatter.yaml` configuration file, or through the administration interface using the [admin](https://github.com/getgrav/grav-plugin-admin) plugin.
+
+```
+date:
+  translate: true
+```
+
 # Setup
 
 If you want to set Antimatter as the default theme, you can do so by following these steps:
