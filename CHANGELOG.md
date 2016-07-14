@@ -1,5 +1,5 @@
-# v2.0.0-beta.2
-## 06/xx/2016
+# v2.0.0
+## 07/14/2016
 
 1. [](#new)
     * Added microformats2 support [#64](https://github.com/getgrav/grav-theme-antimatter/pull/64)
