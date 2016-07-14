@@ -1,4 +1,5 @@
 // Header styling
+$dropdown-color: #f6f6f6;
 
 #header {
 	@extend .default-animation;
@@ -32,6 +33,10 @@
 		#navbar a:before, #navbar a:after {
 			background-color: $core-accent !important;
 		}
+
+		.navigation {
+			margin-top: 0.5rem !important;
+		}
 	}
 
 	// set heights for vertical centering
@@ -56,6 +61,44 @@
 
 	#navbar {
 		font-size: $core-font-size - 0.1rem;
+
+		/* Child Indicator */
+		.has-children {
+
+			& > a {
+				& > span {
+					display: inline-block;
+					padding-right: 8px;
+
+					&:after {
+						font-family: FontAwesome;
+						content: '\f107';
+						position: absolute;
+						display: inline-block;
+						right: 8px;
+						top: 4px;
+					}
+				}
+				&:after, &:before {
+					display: none;
+				}
+			}
+
+			& .has-children > a > span:after {
+				content: '\f105';
+			}
+		}
+
+		.navigation > .has-children:hover > a {
+			background: $dropdown-color;
+			border: 1px solid darken($dropdown-color, 4%);
+			border-bottom-color: $dropdown-color;
+			margin: -1px -1px 0 -1px;
+			z-index: 1000;
+			position: relative;
+			padding-bottom: 1px;
+		}
+
 		ul {
 
 			margin: 0;
@@ -63,10 +106,12 @@
 			list-style: none;
 
 			&.navigation {
-				@extend %vertical-align;
 				display: inline-block;
-				
 				float: right;
+				@extend .default-animation;
+
+				margin-top: 1.4rem;
+
 				li {
 					float: left;
 					position: relative;
@@ -75,6 +120,9 @@
 						font-family: $font-family-header;
 						display: inline-block;
 						padding: 0.3rem 0.8rem;
+
+						-webkit-backface-visibility: hidden;
+
 
 						&:before, &:after {
 							content: "";
@@ -87,6 +135,7 @@
 							visibility: hidden;
 							@include transform(scaleX(0));
 							@include transition(all 0.2s ease);
+
 						}
 
 						&:hover:before {
@@ -109,49 +158,55 @@
 						}
 					}
 
-					// Dropdown Menu Styles
+					/*Active dropdown nav item */
 					ul {
+						position: absolute;
+						background-color: $dropdown-color;
+						border: 1px solid darken($dropdown-color, 4%);
+						border-top: 0;
+						min-width: 12rem;
+						text-align: left;
+						z-index: 999;
+						left: -1px;
 						display: none;
-						padding: 0;
-						box-shadow: 0 0.05rem 1rem rgba(0,0,0, 0.15) !important;
 					}
 
+					ul li {
+						display: block;
+						float: none;
+
+						/* Active Dropdown nav item */
+						&.active > a {
+							background-color: darken($dropdown-color, 4%);
+							color: $core-accent;
+						}
+
+						&:hover > a {
+							background-color: $core-accent;
+							color: $white;
+						}
+
+						a {
+							display: block;
+							margin: 0 -1px;
+
+							&:after, &:before {
+								display: none;
+							}
+						}
+					}
+
+					/* Dropdown CSS */
 					ul ul {
 						left: 100%;
-						top: 0;
-					}	
-
-
-					&:hover {
-						& > ul {
-							display: block;
-							position: absolute;
-							background: rgba($white, 0.9);
-							width: 10rem;
-						}
-
-						li {
-							float: none;
-							margin: 0;
-							padding: 0;
-
-							a {
-								padding: 0.5rem 0.8rem;
-								display: block;
-
-								&:before, &:after {
-									display: none;
-								}
-							}
-
-							&.active {
-								& > a {
-									background: $core-accent;
-									color: $white;
-								}
-							}
-						}
+						top: 0px;
 					}
+
+					/* Active on Hover */
+					&:hover > ul {
+						display: block;
+					}
+
 				}
 				@include breakpoint(desktop-only) {
 					display: none;
@@ -207,6 +262,10 @@
         background-color: rgba($header-text,0);
         box-shadow: none;
 
+		.navigation .has-children:hover a {
+			color: $core-accent;
+		}
+
         #logo h3, #logo a {
             color: $header-text;
         }
@@ -217,15 +276,5 @@
         	background-color: rgba($header-text,0.7) !important;
         }
 
-        #navbar ul.navigation  {
-
-            ul li a {
-
-                color: $core-accent;
-                &:hover {
-                    color: darken($core-accent, 20%);
-                }
-            }
-        }
     }
 }

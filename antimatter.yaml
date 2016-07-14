@@ -1,11 +1,3 @@
 enabled: true
-default_lang: en
 dropdown:
   enabled: false
-
-streams:
-  schemes:
-    theme:
-      type: ReadOnlyStream
-      paths:
-        - user/themes/antimatter
