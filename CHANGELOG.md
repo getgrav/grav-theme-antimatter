@@ -1,3 +1,10 @@
+# v2.x.x
+## 08/xx/2016
+
+1. [](#improved)
+    * Added croatian
+    * Changed "SimpleSearch" string in the sidebar to "Search"
+
 # v2.0.0
 ## 07/14/2016
 
@@ -6,7 +13,7 @@
 1. [](#improved)
     * Updated to FontAwesome 4.6.3
     * Added romanian, russian and ukranian
-    
+
 # v2.0.0-beta.1
 ## 05/23/2016
 
