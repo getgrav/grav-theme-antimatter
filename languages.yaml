@@ -237,5 +237,6 @@ hr:
     SYNDICATE:
       HEADLINE: Kanali
   FORM_DATA:
-    SUMMARY: "Ovo je sažetakj onog što ste nam napisali:"
+    SUMMARY: "Ovo je sažetak onog što ste nam napisali:"
   ERROR: Greška
+  
