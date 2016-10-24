@@ -59,7 +59,7 @@ b, strong, label, th {
 .padding-horiz, .fullwidth #header, .fullwidth #breadcrumbs, .fullwidth .blog-header, .fullwidth .blog-content-item, .fullwidth .content-wrapper, .fullwidth ul.pagination, .fullwidth #body > .modular-row, #body, #header, #footer {
   padding-left: 7rem;
   padding-right: 7rem; }
-  @media only all and (max-width: 59.938em) {
+  @media only all and (min-width: 59.938em) {
     .padding-horiz, .fullwidth #header, .fullwidth #breadcrumbs, .fullwidth .blog-header, .fullwidth .blog-content-item, .fullwidth .content-wrapper, .fullwidth ul.pagination, .fullwidth #body > .modular-row, #body, #header, #footer {
       padding-left: 4rem;
       padding-right: 4rem; } }
@@ -221,7 +221,7 @@ b, strong, label, th {
             top: 0px; }
           #header #navbar ul.navigation li:hover > ul {
             display: block; }
-        @media only all and (max-width: 59.938em) {
+        @media only all and (max-width: 47.938em) {
           #header #navbar ul.navigation {
             display: none; } }
     #header #navbar .panel-activation {
@@ -230,7 +230,7 @@ b, strong, label, th {
       font-size: 1.8rem;
       cursor: pointer;
       float: right; }
-      @media only all and (max-width: 59.938em) {
+      @media only all and (min-width: 59.938em) {
         #header #navbar .panel-activation {
           display: inline-block; } }
 
@@ -897,20 +897,20 @@ ul.pagination {
 .callout {
   background: #f6f6f6;
   padding: 6rem 0.938rem; }
-  @media only all and (max-width: 59.938em) {
+  @media only all and (min-width: 59.938em) {
     .callout {
       text-align: center; } }
   .callout .align-left {
     float: left;
     margin-right: 2rem; }
-    @media only all and (max-width: 59.938em) {
+    @media only all and (min-width: 59.938em) {
       .callout .align-left {
         float: none;
         margin-right: 0; } }
   .callout .align-right {
     float: right;
     margin-left: 2rem; }
-    @media only all and (max-width: 59.938em) {
+    @media only all and (min-width: 59.938em) {
       .callout .align-right {
         float: none;
         margin-left: 0; } }
