@@ -1,6 +1,8 @@
 # v2.x.x
 ## 08/xx/2016
 
+1. [](#new)
+    * Updated to FontAwesome 4.7.0 with [Grav icon](http://fontawesome.io/icon/grav/)
 1. [](#improved)
     * Added croatian
     * Changed "SimpleSearch" string in the sidebar to "Search"
