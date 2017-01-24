@@ -1,11 +1,14 @@
-# v2.x.x
-## 08/xx/2016
+# v2.1.0
+## xx/xx/2017
 
 1. [](#new)
     * Updated to FontAwesome 4.7.0 with [Grav icon](http://fontawesome.io/icon/grav/)
 1. [](#improved)
     * Added croatian
     * Changed "SimpleSearch" string in the sidebar to "Search"
+1. [](#bugfix)
+    * Removed unreachable condition [#85](https://github.com/getgrav/grav-theme-antimatter/pull/85)
+    * Fixed a typo in the french translation
 
 # v2.0.0
 ## 07/14/2016
