@@ -1,3 +1,9 @@
+# v2.1.1
+## 02/26/2017
+
+1. [](#bugfix)
+    * Allow to add a `external` class to site.yaml links to work on modular pages [#95](https://github.com/getgrav/grav-theme-antimatter/pull/95)
+
 # v2.1.0
 ## 01/24/2017
 
@@ -96,7 +102,7 @@
 1. [](#new)
     * Blueprints that work with new admin plugin!
 1. [](#bugfix)
-    * Favicon with full image URL   
+    * Favicon with full image URL
 
 # v1.6.1
 ## 07/24/2015
