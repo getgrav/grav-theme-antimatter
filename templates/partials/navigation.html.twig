@@ -23,7 +23,7 @@
                     {{ _self.loop(p) }}
                 </ul>
             </li>
-        {% elseif p.routable != false %}
+        {% elseif p.routable == true %}
             <li class="{{ current_page }}">
                 <a href="{{ p.url }}">
                     {% if p.header.icon %}<i class="fa fa-{{ p.header.icon }}"></i>{% endif %}
