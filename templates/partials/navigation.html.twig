@@ -1,7 +1,7 @@
 {% macro loop(page) %}
     {% for p in page.children.visible %}
         {% set current_page = (p.active or p.activeChild) ? 'active' : '' %}
-        {% if p.children.visible.count > 0 %}
+        {% if p.children.visible.count > 0 and p.routable != false %}
             <li class="has-children {{ current_page }}">
                 <a href="{{ p.url }}">
                     {% if p.header.icon %}<i class="fa fa-{{ p.header.icon }}"></i>{% endif %}
@@ -12,9 +12,27 @@
                     {{ _self.loop(p) }}
                 </ul>
             </li>
-        {% else %}
+        {% elseif p.children.visible.count > 0 and p.routable == false %}
+            <li class="has-children {{ current_page }}">
+                <a href="#">
+                    {% if p.header.icon %}<i class="fa fa-{{ p.header.icon }}"></i>{% endif %}
+                    {{ p.menu }}
+                    <span></span>
+                </a>
+                <ul>
+                    {{ _self.loop(p) }}
+                </ul>
+            </li>
+        {% elseif p.routable != false %}
             <li class="{{ current_page }}">
                 <a href="{{ p.url }}">
+                    {% if p.header.icon %}<i class="fa fa-{{ p.header.icon }}"></i>{% endif %}
+                    {{ p.menu }}
+                </a>
+            </li>               
+        {% else %}
+            <li class="{{ current_page }}">
+                <a href="#">
                     {% if p.header.icon %}<i class="fa fa-{{ p.header.icon }}"></i>{% endif %}
                     {{ p.menu }}
                 </a>
@@ -28,13 +46,22 @@
         {{ _self.loop(pages) }}
     {% else %}
         {% for page in pages.children.visible %}
-            {% set current_page = (page.active or page.activeChild) ? 'active' : '' %}
+        {% set current_page = (page.active or page.activeChild) ? 'active' : '' %}
+        {% if page.routable != false %}
             <li class="{{ current_page }}">
                 <a href="{{ page.url }}">
                     {% if page.header.icon %}<i class="fa fa-{{ page.header.icon }}"></i>{% endif %}
                     {{ page.menu }}
                 </a>
             </li>
+        {% else %}
+            <li class="{{ current_page }}">
+                <a href="#">
+                    {% if page.header.icon %}<i class="fa fa-{{ page.header.icon }}"></i>{% endif %}
+                    {{ page.menu }}
+                </a>
+            </li>
+        {% endif %}    
         {% endfor %}
     {% endif %}
     {% for mitem in site.menu %}
@@ -49,4 +76,3 @@
         <li><i class="fa fa-lock"></i> {% include 'partials/login-status.html.twig' %}</li>
     {% endif %}
 </ul>
-
