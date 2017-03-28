@@ -41,6 +41,8 @@
 <body id="top" class="{{ page.header.body_classes }}">
     <div id="sb-site">
         {% block header %}
+        {% if maintenance.allow_login and not grav.user.authenticated %}
+        {% else %}
         <header id="header">
             <div id="logo">
                 <h3><a href="{{ base_url == '' ? '/' : base_url }}">{{ config.site.title }}</a></h3>
@@ -56,6 +58,7 @@
                 <span class="panel-activation sb-toggle-left navbar-left menu-btn fa fa-bars"></span>
             </div>
         </header>
+        {% endif %}
         {% endblock %}
 
         {% block showcase %}{% endblock %}
@@ -67,12 +70,15 @@
         {% endblock %}
 
         {% block footer %}
+        {% if maintenance.allow_login and not grav.user.authenticated %}
+        {% else %}
         <footer id="footer">
             <div class="totop">
                 <span><a href="#" id="toTop"><i class="fa fa-arrow-up"></i></a></span>
             </div>
             <p><a href="http://getgrav.org">Grav</a> was <i class="fa fa-code"></i> with <i class="fa fa-heart"></i> by <a href="http://www.rockettheme.com">RocketTheme</a>.</p>
         </footer>
+        {% endif %}
         {% endblock %}
     </div>
     <div class="sb-slidebar sb-left sb-width-thin">
