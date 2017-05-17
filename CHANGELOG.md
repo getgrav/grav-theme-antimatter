@@ -1,3 +1,11 @@
+# v2.x.x
+## 0x/xx/2017
+
+1. [](#improved)
+    * Added polish translation
+1. [](#bugfix)
+    * Fix showcase template overlapping when not at top [#99](https://github.com/getgrav/grav-theme-antimatter/pull/99)
+
 # v2.1.1
 ## 02/26/2017
 
