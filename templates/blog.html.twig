@@ -1,6 +1,6 @@
 {% embed 'partials/base.html.twig' %}
 
-	{% set collection = page.collection() %}
+	{% set collection = page.collection().visible %}
 
 	{% block content %}
 		{% set blog_image = page.media.images|first.grayscale().contrast(20).brightness(-100).colorize(-35,81,122) %}
