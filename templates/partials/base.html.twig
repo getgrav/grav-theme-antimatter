@@ -75,12 +75,12 @@
         </footer>
         {% endblock %}
     </div>
-    <div class="sb-slidebar sb-left sb-width-thin">
-        <div id="panel">
-        {% include 'partials/navigation.html.twig' %}
-        </div>
-    </div>
     {% block bottom %}
+        <div class="sb-slidebar sb-left sb-width-thin">
+            <div id="panel">
+            {% include 'partials/navigation.html.twig' %}
+            </div>
+        </div>
         {{ assets.js('bottom') }}
         <script>
         $(function () {
