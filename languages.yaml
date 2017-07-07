@@ -266,3 +266,30 @@ pl:
   FORM_DATA:
     SUMMARY: "Podsumowanie tego co do nas napisałeś:"
   ERROR: Błąd
+
+pt-BR:
+  TRANSLATION_TEST: Antimatter!
+  BLOG:
+    ITEM:
+      CONTINUE_READING: Continue lendo...
+      NEXT_POST: Próximo Post
+      PREV_POST: Post anterior
+  SIDEBAR:
+    SIMPLE_SEARCH:
+      HEADLINE: Buscar 
+    RELATED_POSTS:
+      HEADLINE: Posts relacionados
+    RANDOM_ARTICLE:
+      HEADLINE: Artigo aleatório
+      FEELING_LUCKY: Me sinto sortudo.
+    SOME_TEXT_WIDGET:
+      HEADLINE: Algum widget de texto
+    POPULAR_TAGS:
+      HEADLINE: Tags Populares
+    ARCHIVES:
+      HEADLINE: Arquivos
+    SYNDICATE:
+      HEADLINE: Feed
+  FORM_DATA:
+    SUMMARY: "Aqui está o resumo do que você nos escreveu:"
+  ERROR: Erro
