@@ -293,3 +293,4 @@ pt-BR:
   FORM_DATA:
     SUMMARY: "Aqui está o resumo do que você nos escreveu:"
   ERROR: Erro
+  SHORT_MONTHS: ["Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dez"]
