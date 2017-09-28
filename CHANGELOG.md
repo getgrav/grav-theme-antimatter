@@ -1,5 +1,5 @@
-# v2.x.x
-## 0x/xx/2017
+# v2.1.2
+## 9/28/2017
 
 1. [](#improved)
     * Added polish and brazilian portuguese translations
