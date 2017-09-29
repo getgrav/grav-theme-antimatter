@@ -293,3 +293,30 @@ pt-BR:
   FORM_DATA:
     SUMMARY: "Aqui está o resumo do que você nos escreveu:"
   ERROR: Erro
+
+sv:
+  TRANSLATION_TEST: Antimatter!
+  BLOG:
+    ITEM:
+      CONTINUE_READING: Fortsätt läsa...
+      NEXT_POST: Nästa inlägg
+      PREV_POST: Förra inlägget
+  SIDEBAR:
+    SIMPLE_SEARCH:
+      HEADLINE: Sök
+    RELATED_POSTS:
+      HEADLINE: Relaterade inlägg
+    RANDOM_ARTICLE:
+      HEADLINE: Slumpad artikel
+      FEELING_LUCKY: Jag har tur!
+    SOME_TEXT_WIDGET:
+      HEADLINE: En text-widget
+    POPULAR_TAGS:
+      HEADLINE: Populära taggar
+    ARCHIVES:
+      HEADLINE: Arkiv
+    SYNDICATE:
+      HEADLINE: Syndikat
+  FORM_DATA:
+    SUMMARY: "Här är en sammanfattning av vad du skrev till oss:"
+  ERROR: Fel
