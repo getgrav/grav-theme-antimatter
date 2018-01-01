@@ -133,6 +133,33 @@ it:
     SUMMARY: "Questo è il riassunto di quanto ci hai scritto:"
   ERROR: Errore
 
+nl:
+  TRANSLATION_TEST: Antimatter!
+  BLOG:
+    ITEM:
+      CONTINUE_READING: Lees verder...
+      NEXT_POST: Vorig artikel
+      PREV_POST: Volgend artikel
+  SIDEBAR:
+    SIMPLE_SEARCH:
+      HEADLINE: Eenvoudig zoeken
+    RELATED_POSTS:
+      HEADLINE: Verwante artikelen
+    RANDOM_ARTICLE:
+      HEADLINE: Willekeurig artikel
+      FEELING_LUCKY: Ik ga voor mazzel!
+    SOME_TEXT_WIDGET:
+      HEADLINE: Widget met voorbeeld tekst
+    POPULAR_TAGS:
+      HEADLINE: Populaire tags
+    ARCHIVES:
+      HEADLINE: Archief
+    SYNDICATE:
+      HEADLINE: Feed
+  FORM_DATA:
+    SUMMARY: "Dit is kort wat u ons geschreven hebt:"
+  ERROR: Fout
+
 ro:
   BLOG:
    ITEM:
