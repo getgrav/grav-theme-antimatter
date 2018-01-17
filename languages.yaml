@@ -293,3 +293,31 @@ pt-BR:
   FORM_DATA:
     SUMMARY: "Aqui está o resumo do que você nos escreveu:"
   ERROR: Erro
+
+hu:
+  TRANSLATION_TEST: Antimatter!
+  BLOG:
+    ITEM:
+      CONTINUE_READING: Bővebben...
+      NEXT_POST: Következő
+      PREV_POST: Előző
+  SIDEBAR:
+    SIMPLE_SEARCH:
+      HEADLINE: Keresés
+    RELATED_POSTS:
+      HEADLINE: Kapcsolódó bejegyzések
+    RANDOM_ARTICLE:
+      HEADLINE: Véletlen bejegyzés
+      FEELING_LUCKY: Ma jó napom van!
+    SOME_TEXT_WIDGET:
+      HEADLINE: Egyéb szöveges Widget
+    POPULAR_TAGS:
+      HEADLINE: Népszerű címkék
+    ARCHIVES:
+      HEADLINE: Arhív
+    SYNDICATE:
+      HEADLINE: Feed
+  FORM_DATA:
+    SUMMARY: "Íme az összefoglaló, amit nekünk írtál:"
+  ERROR: Hiba
+
