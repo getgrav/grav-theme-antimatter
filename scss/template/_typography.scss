@@ -61,7 +61,7 @@ h3 {
 	letter-spacing: -1px;
 }
 
-h1 + h2 {
+h1 ~ h2 {
 	margin: -2rem 0 2rem 0;
 	font-size: 2rem;
 	@include breakpoint(tablet-range) {
@@ -76,7 +76,7 @@ h1 + h2 {
 	font-weight: 300;
 }
 
-h2 + h3 {
+h2 ~ h3 {
 	margin: 0.5rem 0 2rem 0;
 	font-size: 2rem;
 	@include breakpoint(tablet-range) {
