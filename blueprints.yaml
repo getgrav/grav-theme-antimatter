@@ -1,5 +1,5 @@
 name: Antimatter
-version: 2.1.2
+version: 2.2.0
 description: "Antimatter is the default theme included with **Grav**"
 icon: empire
 author:
@@ -11,6 +11,9 @@ demo: http://demo.getgrav.org/blog-skeleton
 keywords: antimatter, theme, core, modern, fast, responsive, html5, css3
 bugs: https://github.com/getgrav/grav-theme-antimatter/issues
 license: MIT
+
+dependencies:
+  - { name: grav, version: '>=1.5.10' }
 
 form:
   validation: loose
