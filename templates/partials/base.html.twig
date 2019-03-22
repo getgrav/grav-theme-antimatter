@@ -1,6 +1,6 @@
 {% set theme_config = attribute(config.themes, config.system.pages.theme) %}
 <!DOCTYPE html>
-<html lang="{{ grav.language.getLanguage ?: 'en' }}">
+<html lang="{{ grav.language.getActive ?: grav.config.site.default_lang }}">
 <head>
 {% block head %}
     <meta charset="utf-8" />
@@ -26,7 +26,6 @@
             {% do assets.addJs('theme://js/html5shiv-printshiv.min.js') %}
         {% endif %}
     {% endblock %}
-    {{ assets.css() }}
 
     {% block javascripts %}
         {% do assets.addJs('jquery', 101) %}
@@ -34,7 +33,11 @@
         {% do assets.addJs('theme://js/antimatter.js') %}
         {% do assets.addJs('theme://js/slidebars.min.js') %}
     {% endblock %}
-    {{ assets.js() }}
+
+    {% block assets deferred %}
+        {{ assets.css()|raw }}
+        {{ assets.js()|raw }}
+    {% endblock %}
 
 {% endblock head %}
 </head>
@@ -83,8 +86,7 @@
         </div>
     {% endblock %}
     {% block bottom %}
-        {{ assets.js('bottom') }}
-        <script>
+         <script>
         $(function () {
             $(document).ready(function() {
               $.slidebars({
@@ -94,6 +96,7 @@
             });
         });
         </script>
+        {{ assets.js('bottom')|raw }}
     {% endblock %}
 </body>
 </html>
