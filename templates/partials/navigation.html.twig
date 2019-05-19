@@ -1,4 +1,7 @@
+{% import _self as macros %}
+
 {% macro loop(page) %}
+    {% import _self as macros %}
     {% for p in page.children.visible %}
         {% set current_page = (p.active or p.activeChild) ? 'active' : '' %}
         {% if p.children.visible.count > 0 %}
@@ -9,7 +12,7 @@
                     <span></span>
                 </a>
                 <ul>
-                    {{ _self.loop(p) }}
+                    {{ macros.loop(p) }}
                 </ul>
             </li>
         {% else %}
@@ -25,7 +28,7 @@
 
 <ul class="navigation">
     {% if theme_config.dropdown.enabled %}
-        {{ _self.loop(pages) }}
+        {{ macros.loop(pages) }}
     {% else %}
         {% for page in pages.children.visible %}
             {% set current_page = (page.active or page.activeChild) ? 'active' : '' %}

@@ -1,3 +1,9 @@
+# v2.2.1
+## mm/dd/2019
+
+1. [](#bugfix)
+    * Fix deprecated messages from macros [#140](https://github.com/getgrav/grav-theme-antimatter/issues/140)
+
 # v2.2.0
 ## 03/21/2019
 
