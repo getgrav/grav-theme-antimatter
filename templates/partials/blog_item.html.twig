@@ -14,7 +14,7 @@
         </span>
         {% if page.header.link %}
             <h4 class="p-name">
-                {% if page.header.continue_link is not sameas(false) %}
+                {% if page.header.continue_link is not same as(false) %}
                 <a href="{{ page.url }}"><i class="fa fa-angle-double-right u-url"></i></a>
                 {% endif %}
                 <a href="{{ page.header.link }}" class="u-url">{{ page.title }}</a>
@@ -36,33 +36,33 @@
             {% else %}
                 {% set header_image_media = page.media.images|first %}
             {% endif %}
-            {{ header_image_media.cropZoom(header_image_width, header_image_height).html }}
+            {{ header_image_media.cropZoom(header_image_width, header_image_height).html|raw }}
         {% endif %}
 
     </div>
 
     <div class="list-blog-padding">
 
-    {% if page.header.continue_link is sameas(false) %}
-        <div class="e-content">        
-            {{ page.content }}
+    {% if page.header.continue_link is same as(false) %}
+        <div class="e-content">
+            {{ page.content|raw }}
         </div>
         {% if not truncate %}
         {% set show_prev_next = true %}
         {% endif %}
     {% elseif truncate and page.summary != page.content %}
         <div class="p-summary e-content">
-            {{ page.summary }}
+            {{ page.summary|raw }}
             <p><a href="{{ page.url }}">{{ 'BLOG.ITEM.CONTINUE_READING'|t }}</a></p>
         </div>
     {% elseif truncate %}
         <div class="p-summary e-content">
-            {{ page.content }}
+            {{ page.content|raw }}
             <p><a href="{{ page.url }}">{{ 'BLOG.ITEM.CONTINUE_READING'|t }}</a></p>
         </div>
     {% else %}
         <div class="e-content">
-            {{ page.content }}
+            {{ page.content|raw }}
         </div>
 
         {% if config.plugins.comments.enabled %}
