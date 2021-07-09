@@ -2,7 +2,7 @@ en:
   TRANSLATION_TEST: Antimatter!
   BLOG:
     ITEM:
-      CONTINUE_READING: Continue reading...
+      CONTINUE_READING: Continue reading …
       NEXT_POST: Next Post
       PREV_POST: Previous Post
   SIDEBAR:
@@ -29,12 +29,12 @@ de:
   TRANSLATION_TEST: Antimatter!
   BLOG:
     ITEM:
-      CONTINUE_READING: Weiterlesen...
+      CONTINUE_READING: Weiterlesen …
       NEXT_POST: Nächster Beitrag
       PREV_POST: Vorheriger Beitrag
   SIDEBAR:
     SIMPLE_SEARCH:
-      HEADLINE: SimpleSearch
+      HEADLINE: Suche
     RELATED_POSTS:
       HEADLINE: Ähnliche Beiträge
     RANDOM_ARTICLE:
@@ -43,7 +43,7 @@ de:
     SOME_TEXT_WIDGET:
       HEADLINE: Text Widget Beispiel
     POPULAR_TAGS:
-      HEADLINE: Häufigste Tags
+      HEADLINE: Beliebte Tags
     ARCHIVES:
       HEADLINE: Archiv
     SYNDICATE:
@@ -56,7 +56,7 @@ es:
   TRANSLATION_TEST: Antimatter!
   BLOG:
     ITEM:
-      CONTINUE_READING: Continuar leyendo...
+      CONTINUE_READING: Continuar leyendo …
       NEXT_POST: Siguiente Entrada
       PREV_POST: Entrada Anterior
   SIDEBAR:
@@ -83,7 +83,7 @@ fr:
   TRANSLATION_TEST: Antimatter !
   BLOG:
     ITEM:
-      CONTINUE_READING: Continuer la lecture...
+      CONTINUE_READING: Continuer la lecture …
       NEXT_POST: Article suivant
       PREV_POST: Article précédent
   SIDEBAR:
@@ -110,7 +110,7 @@ it:
   TRANSLATION_TEST: Antimatter!
   BLOG:
     ITEM:
-      CONTINUE_READING: Continua a leggere...
+      CONTINUE_READING: Continua a leggere …
       NEXT_POST: Prossimo articolo
       PREV_POST: Articolo precedente
   SIDEBAR:
@@ -136,7 +136,7 @@ it:
 ro:
   BLOG:
    ITEM:
-      CONTINUE_READING: Mai multe...
+      CONTINUE_READING: Mai multe …
       NEXT_POST: Următorul articol
       PREV_POST: Articolul anterior
   SIDEBAR:
@@ -163,7 +163,7 @@ ru:
   TRANSLATION_TEST: Antimatter!
   BLOG:
     ITEM:
-      CONTINUE_READING: Читать далее...
+      CONTINUE_READING: Читать далее …
       NEXT_POST: Следующая запись
       PREV_POST: Предыдущая запись
   SIDEBAR:
@@ -190,7 +190,7 @@ uk:
   TRANSLATION_TEST: Antimatter!
   BLOG:
     ITEM:
-      CONTINUE_READING: Читати далі...
+      CONTINUE_READING: Читати далі …
       NEXT_POST: Наступний запис
       PREV_POST: Попередній запис
   SIDEBAR:
@@ -217,7 +217,7 @@ hr:
   TRANSLATION_TEST: Antimatter!
   BLOG:
     ITEM:
-      CONTINUE_READING: Nastavi s čitanjem...
+      CONTINUE_READING: Nastavi s čitanjem …
       NEXT_POST: Slijedeća objava
       PREV_POST: Prethodna objava
   SIDEBAR:
@@ -244,7 +244,7 @@ pl:
   TRANSLATION_TEST: Antimatter!
   BLOG:
     ITEM:
-      CONTINUE_READING: Czytaj dalej...
+      CONTINUE_READING: Czytaj dalej …
       NEXT_POST: Następny wpis
       PREV_POST: Poprzedni wpis
   SIDEBAR:
@@ -271,7 +271,7 @@ pt-BR:
   TRANSLATION_TEST: Antimatter!
   BLOG:
     ITEM:
-      CONTINUE_READING: Continue lendo...
+      CONTINUE_READING: Continue lendo …
       NEXT_POST: Próximo Post
       PREV_POST: Post anterior
   SIDEBAR:
